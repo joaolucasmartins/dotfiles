@@ -1,0 +1,15 @@
+source "${HOME}/.cache/wal/colors.sh"
+# 3 5 6 7 10 11 14
+# 0 2
+pkill dunst && \
+dunst \
+-nf "FFFFFFF" \
+-nfr "$color4" \
+-nb "F303030" \
+-lf "F000000" \
+-lfr "$color4" \
+-lb "FF0EFF0" \
+-bf "$color4"  \
+-cfr "$color15" \
+-cb "FFF0000" \
+-cf "FFFFFFF" &
