@@ -1,0 +1,27 @@
+URxvt.perl-lib: /usr/lib/urxvt/perl/
+
+URxvt.scrollBar: false
+!!Fake Transparency
+!!URxvt.transparent: true
+!!URxvt.shading: 10
+!! Real Transparency
+URxvt*depth: 80
+URxvt*background: rgba:0000/0000/0200/c800
+!!URxvt.font: xft: Inconsolata\-g for Powerline:size=14, xft:Meslo LG S for Powerline:size=14, xft:BitstreamVeraSansMono Nerd Font:size=14
+URxvt.font: xft:InconsolataGo Nerd Font Mono:size=13, xft:Meslo LG S for Powerline:size=13
+!!URxvt*fading: 5
+Xft.antialias:  true
+URxvt-full: preview_images_method 
+
+!! Ext:
+URxvt.perl-ext-common: default,matcher,url-select,keyboard-select,resize-font
+!! Matcher:
+URxvt.url-launcher: /usr/bin/xdg-open
+URxvt.matcher.button: 1
+!! Url-Sel:
+URxvt.keysym.M-u: perl:url-select:select_next
+URxvt.url-select.launcher: /usr/bin/xdg-open
+URxvt.url-select.underline: true
+!! Res-font:
+URxvt.resize-font.smaller:	C-J
+URxvt.resize-font.bigger:	C-K
