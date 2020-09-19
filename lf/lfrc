@@ -1,0 +1,110 @@
+# INTERPRETER FOR SHELL COMMANDS (NEEDS TO BE POSIX COMPLIANT)
+set shell zsh
+
+# MAKES SHELL COMMANDS SAFER
+# '-e' - EXIT ON ERROR
+# '-u' - EXIT ON UNSET VARIABLE
+set shellopts '-eu'
+
+# SET INTERNAL FIELD SEPARATOR TO '\n' FOR SHELL COMMANDS
+set ifs "\n"
+
+# LEAVE SPACE AT THE TOP AND BOTTOM OF THE SCREEN
+set scrolloff 10
+
+# MAKE SCROLLING WRAP
+set wrapscroll
+
+# 256COLORS AND BETTER RATIO FOR FILE PREVIEW
+set color256
+set ratios '1:1:3'
+
+# USE <enter> FOR SHELL COMMANDS
+map <enter> shell
+
+# MOVE KEYBINDS
+map <c-j> push 10j
+map <c-k> push 10k
+
+# QUIT COMMANDS
+#cmd q :quit
+cmd q :quit
+cmd Q :quit
+
+# EXECUTE CURRENT FILE COMMAND
+map x $$f
+map X !$f
+
+# DEDICATED KEYS FOR FILE OPENER ACTIONS
+map o &mimeopen $f
+map O $mimeopen --ask $f
+
+# define a custom 'open' command
+# This command is called when current file is not a directory. You may want to
+# use either file extensions and/or mime types here. Below uses an editor for
+# text files and a file opener for the rest.
+cmd open ${{
+	case $(file --mime-type $f -b) in
+		text/*) $EDITOR $fx;;
+		*) for f in $fx; do $OPENER $f > /dev/null 2> /dev/null & done;;
+	esac
+}}
+
+# DELETE COMMAND
+cmd delete %{{
+	set -f
+	printf "$fx\n"
+	printf "Delete? (y/n) "
+	read ans
+	[ $ans = "y" ] && rm -rf $fx
+}}
+map D delete
+
+# TRASH
+cmd trash ${{
+    mkdir -p ~/.trash
+    if [ -z "$fs" ]; then
+        mv "$f" ~/.trash
+    else
+        IFS="`printf '\n\t'`"; mv $fs ~/.trash
+    fi
+}}
+map d trash
+
+
+# DECOMPRESS FILE
+cmd decompress ${{
+	set -f
+	mkdir -p "$1" && cd "$1"
+	case $f in
+		*.tar.bz|*.tar.bz2|*.tbz|*.tbz2) tar xjvf $f;;
+		*.tar.gz|*.tgz) tar xzvf $f;;
+		*.tar.xz|*.txz) tar xJvf $f;;
+		*.zip) unzip $f;;
+		*.rar) unrar x $f;;
+		*.7z) 7z x $f;;
+	esac
+}}
+
+# COMPRESS USING TAR
+cmd tar ${{
+	set -f
+	mkdir -p $1
+	cp -r $fx $1
+	tar czf $1.tar.gz $1
+	rm -rf $1
+}}
+
+# COMPRESS USING ZIP
+cmd zip ${{
+	set -f
+	mkdir -p $1
+	cp -r $fx $1
+	zip -r $1.zip $1
+	rm -rf $1
+}}
+
+# PREVIEW
+set previewer ~/.config/lf/pv.sh
+map i $~/.config/lf/pv.sh $f | less -R
+map x cut

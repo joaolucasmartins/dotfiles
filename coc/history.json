@@ -1,0 +1,37 @@
+{
+  "diagnostics": {
+    "%2Fhome%2Fjoao%2FWorking%2Ftestdeople%2F": {
+      "vim": [
+        ":q"
+      ]
+    }
+  },
+  "commands": {
+    "%2Fhome%2Fjm%2FDocuments": [
+      "lat"
+    ],
+    "%2Fhome%2Fjm%2FDocuments%2FOneDrive%2FFEUP%2F2%C2%BAAno%2F2oAno2oSemestre%2FCAL%2FWork%2FCAL-Proj": [
+      "q"
+    ]
+  },
+  "snippets": {
+    "%2Fhome%2Fjm%2FDocuments%2FOneDrive%2FFEUP%2F2%C2%BAAno%201%C2%BASemestre%2FClasses%2FMNUM": [
+      "j:q"
+    ],
+    "%2Fhome%2Fjm": [
+      "qj"
+    ]
+  },
+  "extensions": {
+    "%2Fhome%2Fjm%2F": {
+      "config%2Fnvim": [
+        "q:"
+      ]
+    },
+    "%2Fhome%2Fjm%2FDocuments%2FOneDrive%2FFEUP%2F2%C2%BAAno%2F2oAno2oSemestre%2FCAL%2FWork%2FCAL-Proj": [
+      "qq",
+      "q",
+      "q:q:"
+    ]
+  }
+}

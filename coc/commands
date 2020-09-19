@@ -1,0 +1,8 @@
+tsserver.restart
+prettier.formatFile
+python.startREPL
+extensions.toggleAutoUpdate
+snippets.openSnippetFiles
+snippets.editSnippets
+snippets.extends
+python.execInTerminal
