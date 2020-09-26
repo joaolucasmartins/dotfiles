@@ -7,7 +7,9 @@
 -- Normally, you'd only override those defaults you care about.
 --
 
+
 import XMonad
+
 import Data.Monoid
 import System.Exit
 import Data.Maybe (isJust)

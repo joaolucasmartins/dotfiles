@@ -1,0 +1,22 @@
+00:00:00.625852 VirtualBox GUI VM Selector Window 6.1.14 r140239 linux.amd64 (Sep  7 2020 21:01:30) release log
+00:00:00.625854 Log opened 2020-09-25T08:07:41.330067000Z
+00:00:00.625855 Build Type: release
+00:00:00.625857 OS Product: Linux
+00:00:00.625858 OS Release: 5.8.10-arch1-1
+00:00:00.625859 OS Version: #1 SMP PREEMPT Thu, 17 Sep 2020 18:01:06 +0000
+00:00:00.625878 DMI Product Name: Latitude E7470
+00:00:00.625885 DMI Product Version: 
+00:00:00.625889 Firmware type: UEFI
+00:00:00.626115 Secure Boot: Disabled
+00:00:00.626151 Host RAM: 15901MB (15.5GB) total, 15592MB (15.2GB) available
+00:00:00.626154 Executable: /usr/lib/virtualbox/VirtualBox
+00:00:00.626154 Process ID: 1311
+00:00:00.626155 Package type: LINUX_64BITS_GENERIC (OSE)
+00:00:00.626180 Qt version: 5.15.1
+00:00:00.657412 GUI: UIMediumEnumerator: Medium-enumeration started...
+00:00:01.341164 GUI: UIDesktopWidgetWatchdog::sltHandleHostScreenAvailableGeometryCalculated: Screen 0 work area is actually resized to: 1330x140 x 1128x1198
+00:00:01.382733 GUI: UIMediumEnumerator: Medium-enumeration finished!
+00:00:32.694155 GUI: UIMediumEnumerator: Medium-enumeration finished!
+00:00:35.509224 GUI: UIMediumEnumerator: Medium-enumeration finished!
+00:02:08.938847 GUI: UIMediumEnumerator: Medium-enumeration finished!
+00:02:14.634188 GUI: UIMediumEnumerator: Medium-enumeration finished!

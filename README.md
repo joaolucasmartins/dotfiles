@@ -5,4 +5,8 @@ Need to build st, slock and dmenu. (included)
 
 # Dependencies
 
-pywal xmonad xmonad-contrib x
+pywal xmonad xmonad-contrib x 
+
+## Pywal and Xmonad compatibility
+
+haskell-dbus xmonad-log

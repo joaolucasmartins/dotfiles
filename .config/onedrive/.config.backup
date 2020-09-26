@@ -1,0 +1,2 @@
+sync_dir="~/Documents/FEUP"
+skip_file = "~*|.~*|*.o|*.tmp"

@@ -26,7 +26,7 @@ static unsigned int lineheight      = 0;
 static unsigned int columns    = 5;
 
 static int dmx = 0; /* put dmenu at this x offset */
-static int dmy = 40; /* put dmenu at this y offset (measured from the bottom if topbar is 0) */
+static int dmy = 35; /* put dmenu at this y offset (measured from the bottom if topbar is 0) */
 static unsigned int dmw = 2550; /* make dmenu this wide */
 
 /*

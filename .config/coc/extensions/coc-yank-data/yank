@@ -1,0 +1,1049 @@
+8cda1866fc0792d9a0cc60ef46a946fe|file:///home/jm/.config/nvim/git.vim|14|1|V|vim
+	nmap <leader>gk <plug>(signify-prev-hunk)
+6eac093ba35b5446dc51c33ea6f7c637|file:///home/jm/.config/nvim/git.vim|24|46|v|vim
+	signify-prev-hunk
+380991f175058abd3c0e1686faa3fb0e|file:///home/jm/apps/dotfiles-ifg/nvim/init.vim|7|1|V|vim
+	  silent !curl "https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim" > ~/.config/nvim/autoload/plug.vim
+b6ba7ffc6608d126e56cc8c263bc34fc|file:///home/jm/.config/nvim/git.vim|24|24|v|vim
+	SignifyToggleHighlight
+46fbd9a74a0ea2cd0bc35534218952c0|file:///home/jm/.config/nvim/git.vim|24|17|v|vim
+	<plug>(signify)
+58bd31568a0117c424934a20c94ef9ef|file:///home/jm/.config/nvim/git.vim|24|24|v|vim
+	SignDelete
+d49c8cc502c1931e306ef1bb88fb82bd|file:///home/jm/.config/nvim/coc.vim|15|1|V|vim
+	            \'coc-html',
+d755b792215138942162920869d1533e|file:///home/jm/.config/nvim/coc.vim|78|1|V|vim
+	
+	" Coc Highlight
+	autocmd CursorHold * silent call CocActionAsync('highlight')
+b326b5062b2f0e69046810717534cb09|file:///home/jm/.config/nvim/coc-settings.json|63|32|v|json
+	true
+7dd7ea743f9f7e47ccf72df42c17d282|file:///home/jm/.config/nvim/coc.vim|15|1|V|vim
+	            \'coc-highlight',
+682b1e80d166d7661d3f35b1ad8139aa|file:///home/jm/.config/nvim/lua/plug-colorizer.lua|2|1|V|lua
+	require'colorizer'.setup(
+	  {'*';},
+	  {
+	    RGB      = true;         -- #RGB hex codes
+		  RRGGBB   = true;         -- #RRGGBB hex codes
+		  names    = true;         -- "Name" codes like Blue
+		  RRGGBBAA = true;         -- #RRGGBBAA hex codes
+		  rgb_fn   = true;         -- CSS rgb() and rgba() functions
+		  hsl_fn   = true;         -- CSS hsl() and hsla() functions
+		  css      = true;         -- Enable all CSS features: rgb_fn, hsl_fn, names, RGB, RRGGBB
+		  css_fn   = true;         -- Enable all CSS *functions*: rgb_fn, hsl_fn
+	  })
+bf5fd8c3d433ff2a595164916ad8ca69|file:///home/jm/.config/nvim/lua/plug-colorizer.lua|1|1|V|lua
+	lua require 'colorizer'.setup()
+b11464f4f863494ba26423528a99c556|file:///home/jm/.config/nvim/settings.vim|18|1|V|vim
+	set hidden                              " Required to keep multiple buffers open multiple buffers
+064a69e4bcea49ec71da5e4184e5e0fa|file:///home/jm/.config/nvim/settings.vim|19|5|v|vim
+	hidden                              " Required to keep multiple buffers open multiple buffers
+c05051b3cd4bc7326942506fd6b9a7b6|file:///home/jm/tes|1|1|V|conf
+	
+	#F8F8F8
+	#AAAAAA
+	#000000
+	#AA0000
+a4eec741c6176deac8d0082a74314939|file:///home/jm/.config/nvim/airline.vim|12|1|V|vim
+	
+	" enable tabline
+	" let g:airline#extensions#tabline#enabled = 1
+	" let g:airline#extensions#tabline#left_sep = ''
+	" let g:airline#extensions#tabline#left_alt_sep = ''
+	" let g:airline#extensions#tabline#right_sep = ''
+	" let g:airline#extensions#tabline#right_alt_sep = ''
+	" let airline#extensions#tabline#show_splits = 0
+	" let airline#extensions#tabline#tabs_label = ''
+	
+	" Disable tabline close button
+	let g:airline#extensions#tabline#show_close_button = 0
+	let g:airline#extensions#tabline#show_tab_type = 0
+	let g:airline#extensions#tabline#show_tab_nr = 0
+	let g:airline#extensions#tabline#fnamecollapse = 1
+	
+	let g:airline_extensions = ['branch', 'hunks', 'coc']
+	
+	let g:airline#extensions#tabline#buffers_label = ''
+	let g:airline#extensions#tabline#tabs_label = ''
+	let g:airline#extensions#coc#enabled = 1
+	
+	" Just show the file name
+	let g:airline#extensions#tabline#fnamemod = ':t'
+	
+	" enable powerline fonts
+	let g:airline_powerline_fonts = 1
+	let g:airline_left_sep = ''
+	let g:airline_right_sep = ''
+	let g:airline_right_alt_sep = ''
+	
+	let g:airline#extensions#tabline#formatter = 'unique_tail'
+	
+	let g:airline#extensions#default#layout = [['a', 'b', 'c'], ['x', 'z', 'warning', 'error']]
+	" let g:airline_skip_empty_sections = 1
+	
+	let g:airline_section_c = airline#section#create([''])
+	" let g:airline_section_z = airline#section#create(['linenr'])
+	
+	" Switch to your current theme
+	" let g:airline_theme = 'onedark'
+	
+	" Always show tabs
+	set showtabline=2
+	
+	" We don't need to see things like -- INSERT -- anymore
+	set noshowmode
+	
+01c362ca9039afa28cfc2c0281061166|file:///home/jm/.config/nvim/airline.vim|17|1|V|vim
+	let g:airline_section_y = ''
+31e5ce62bd8a79f3e347a6c4284b4475|file:///home/jm/.config/nvim/airline.vim|12|1|V|vim
+	
+	" Sections
+	let g:airline_section_c = ''
+	let g:airline_section_a = " NVCode"
+	" let g:airline_section_a = ""
+	let g:webdevicons_enable_airline_tabline = 1
+9603a224b40d7b67210b78f2e390d00f|file:///home/jm/.config/nvim/airline.vim|13|29|v|vim
+	branch
+1f6f5f751b1429b7000c4352a460005e|file:///home/jm/.config/nvim/airline.vim|13|29|v|vim
+	hunks
+4b436df83b0408ee501c5f5bec182557|file:///home/jm/.config/nvim/init.vim|70|1|V|vim
+	
+	set termguicolors
+	hi LineNr ctermbg=NONE guibg=NONE
+8143e2dfa304113f63186f667fba9557|file:///home/jm/.config/nvim/init.vim|69|1|V|vim
+	
+	set termguicolors
+	hi LineNr ctermbg=NONE guibg=NONE
+	colorscheme wal
+58d41880cde6924b73ddf3343d126fd8|file:///home/jm/.config/nvim/init.vim|46|1|V|vim
+	set termguicolors
+85b3dcd5547baccaa5caa04d107b860c|file:///home/jm/.config/nvim_bak/init.vim|97|1|V|vim
+	let g:material_style = 'oceanic'
+ff5d8445c981379495375c596b8da65f|file:///home/jm/.config/nvim/init.vim|20|1|V|vim
+	
+	Plug 'norcalli/nvim-colorizer.lua'
+0d587cda997c299b713900f179ef8e9f|file:///home/jm/.config/nvim/init.vim|44|25|V|vim
+	lua require'plug-colorizer'
+2d63d1a66093c719b33519fa4e2c9e82|file:///home/jm/.config/nvim/coc-settings.json|63|1|V|json
+	    "highlight.colors.enable": true,
+	    "highlight.colorNames.enable": true
+357f53072f2777d47b7d9d7eefacfcc8|file:///home/jm/.config/nvim/coc-settings.json|64|1|V|json
+	    "highlight.colorNames.enable": true
+478940102d4203a9913d511e0ac1ccaf|file:///home/jm/.config/nvim/init.vim|20|1|V|vim
+	Plug 'junegunn/fzf'
+65cd1eed799d4e866863899fb56e37ef|file:///home/jm/.config/nvim/fzf.vim|1|1|V|vim
+	let g:fzf_history_dir = '~/.local/share/fzf-history'
+	
+	let g:fzf_layout = {'up':'~90%', 'window': { 'width': 0.8, 'height': 0.8,'yoffset':0.5,'xoffset': 0.5, 'highlight': 'Todo', 'border': 'sharp' } }
+	
+	
+	let $FZF_DEFAULT_OPTS = '--layout=reverse --info=inline'
+	let $FZF_DEFAULT_COMMAND="rg --files --hidden"
+	
+	let g:fzf_colors =
+	\ { 'fg':      ['fg', 'Normal'],
+	  \ 'bg':      ['bg', 'Normal'],
+	  \ 'hl':      ['fg', 'Comment'],
+	  \ 'fg+':     ['fg', 'CursorLine', 'CursorColumn', 'Normal'],
+	  \ 'bg+':     ['bg', 'CursorLine', 'CursorColumn'],
+	  \ 'hl+':     ['fg', 'Statement'],
+	  \ 'info':    ['fg', 'PreProc'],
+	  \ 'border':  ['fg', 'Ignore'],
+	  \ 'prompt':  ['fg', 'Conditional'],
+	  \ 'pointer': ['fg', 'Exception'],
+	  \ 'marker':  ['fg', 'Keyword'],
+	  \ 'spinner': ['fg', 'Label'],
+	  \ 'header':  ['fg', 'Comment'] }
+	
+	
+	"Get Files
+	command! -bang -nargs=? -complete=dir Files
+	    \ call fzf#vim#files(<q-args>, fzf#vim#with_preview({'options': ['--layout=reverse', '--info=inline']}), <bang>0)
+	
+	
+	" Get text in files with Rg
+	command! -bang -nargs=* Rg
+	  \ call fzf#vim#grep(
+	  \   'rg --column --line-number --no-heading --color=always --smart-case '.shellescape(<q-args>), 1,
+	  \   fzf#vim#with_preview(), <bang>0)
+0cd2ab2f0434d542225c64cfcfc1b8db|file:///home/jm/.config/nvim/init.vim|74|1|V|vim
+	
+	
+	" Get text in files with Rg
+	command! -bang -nargs=* Rg
+	  \ call fzf#vim#grep(
+	  \   'rg --column --line-number --no-heading --color=always --smart-case '.shellescape(<q-args>), 1,
+	  \   fzf#vim#with_preview(), <bang>0)
+3785d0524d9e105abbcefa47b3bee9bc|file:///home/jm/.config/nvim/fzf.vim|1|1|V|vim
+	" This is the default extra key bindings
+	let g:fzf_action = {
+	  \ 'ctrl-t': 'tab split',
+	  \ 'ctrl-x': 'split',
+	  \ 'ctrl-v': 'vsplit' }
+	
+	" Enable per-command history.
+	" CTRL-N and CTRL-P will be automatically bound to next-history and
+	" previous-history instead of down and up. If you don't like the change,
+	" explicitly bind the keys to down and up in your $FZF_DEFAULT_OPTS.
+	let g:fzf_history_dir = '~/.local/share/fzf-history'
+	
+	map <C-f> :Files<CR>
+	map <leader>b :Buffers<CR>
+	nnoremap <leader>g :Rg<CR>
+	nnoremap <leader>t :Tags<CR>
+	nnoremap <leader>m :Marks<CR>
+	
+	
+	let g:fzf_tags_command = 'ctags -R'
+	" Border color
+	let g:fzf_layout = {'up':'~90%', 'window': { 'width': 0.8, 'height': 0.8,'yoffset':0.5,'xoffset': 0.5, 'highlight': 'Todo', 'border': 'sharp' } }
+	
+	let $FZF_DEFAULT_OPTS = '--layout=reverse --info=inline'
+	let $FZF_DEFAULT_COMMAND="rg --files --hidden"
+	
+	
+	" Customize fzf colors to match your color scheme
+	let g:fzf_colors =
+	\ { 'fg':      ['fg', 'Normal'],
+	  \ 'bg':      ['bg', 'Normal'],
+	  \ 'hl':      ['fg', 'Comment'],
+	  \ 'fg+':     ['fg', 'CursorLine', 'CursorColumn', 'Normal'],
+	  \ 'bg+':     ['bg', 'CursorLine', 'CursorColumn'],
+	  \ 'hl+':     ['fg', 'Statement'],
+	  \ 'info':    ['fg', 'PreProc'],
+	  \ 'border':  ['fg', 'Ignore'],
+	  \ 'prompt':  ['fg', 'Conditional'],
+	  \ 'pointer': ['fg', 'Exception'],
+	  \ 'marker':  ['fg', 'Keyword'],
+	  \ 'spinner': ['fg', 'Label'],
+	  \ 'header':  ['fg', 'Comment'] }
+	
+	"Get Files
+	command! -bang -nargs=? -complete=dir Files
+	    \ call fzf#vim#files(<q-args>, fzf#vim#with_preview({'options': ['--layout=reverse', '--info=inline']}), <bang>0)
+	
+	
+	" Get text in files with Rg
+	command! -bang -nargs=* Rg
+	  \ call fzf#vim#grep(
+	  \   'rg --column --line-number --no-heading --color=always --smart-case '.shellescape(<q-args>), 1,
+	  \   fzf#vim#with_preview(), <bang>0)
+	
+	" Ripgrep advanced
+	function! RipgrepFzf(query, fullscreen)
+	  let command_fmt = 'rg --column --line-number --no-heading --color=always --smart-case %s || true'
+	  let initial_command = printf(command_fmt, shellescape(a:query))
+	  let reload_command = printf(command_fmt, '{q}')
+	  let spec = {'options': ['--phony', '--query', a:query, '--bind', 'change:reload:'.reload_command]}
+	  call fzf#vim#grep(initial_command, 1, fzf#vim#with_preview(spec), a:fullscreen)
+	endfunction
+	
+	command! -nargs=* -bang RG call RipgrepFzf(<q-args>, <bang>0)
+	
+	" Git grep
+	command! -bang -nargs=* GGrep
+	  \ call fzf#vim#grep(
+	  \   'git grep --line-number '.shellescape(<q-args>), 0,
+	  \   fzf#vim#with_preview({'dir': systemlist('git rev-parse --show-toplevel')[0]}), <bang>0)
+863e04ef61a4b682063b4680bb905736|file:///home/jm/.config/nvim/init.vim|45|9|V|vim
+	source $HOME/.config/nvim/fzf.vim
+8f4cc614bce5ee67084e1fa51b597815|file:///home/jm/.config/nvim/fzf.vim|1|1|V|vim
+	
+	" Customize fzf colors to match your color scheme
+	let g:fzf_colors =
+	\ { 'fg':      ['fg', 'Normal'],
+	  \ 'bg':      ['bg', 'Normal'],
+	  \ 'hl':      ['fg', 'Comment'],
+	  \ 'fg+':     ['fg', 'CursorLine', 'CursorColumn', 'Normal'],
+	  \ 'bg+':     ['bg', 'CursorLine', 'CursorColumn'],
+	  \ 'hl+':     ['fg', 'Statement'],
+	  \ 'info':    ['fg', 'PreProc'],
+	  \ 'border':  ['fg', 'Ignore'],
+	  \ 'prompt':  ['fg', 'Conditional'],
+	  \ 'pointer': ['fg', 'Exception'],
+	  \ 'marker':  ['fg', 'Keyword'],
+	  \ 'spinner': ['fg', 'Label'],
+	  \ 'header':  ['fg', 'Comment'] }
+	
+cd2c4aec3e1a67b373fc69d2c76ab87f|file:///home/jm/.config/nvim/fzf.vim|17|1|V|vim
+	
+	
+	" Customize fzf colors to match your color scheme
+	let g:fzf_colors =
+	\ { 'fg':      ['fg', 'Normal'],
+	  \ 'bg':      ['bg', 'Normal'],
+	  \ 'hl':      ['fg', 'Comment'],
+	  \ 'fg+':     ['fg', 'CursorLine', 'CursorColumn', 'Normal'],
+	  \ 'bg+':     ['bg', 'CursorLine', 'CursorColumn'],
+	  \ 'hl+':     ['fg', 'Statement'],
+	  \ 'info':    ['fg', 'PreProc'],
+	  \ 'border':  ['fg', 'Ignore'],
+	  \ 'prompt':  ['fg', 'Conditional'],
+	  \ 'pointer': ['fg', 'Exception'],
+	  \ 'marker':  ['fg', 'Keyword'],
+	  \ 'spinner': ['fg', 'Label'],
+	  \ 'header':  ['fg', 'Comment'] }
+dc2e347b151d7bccc7a73f3a37b989f9|file:///home/jm/.config/nvim/fzf.vim|14|1|V|vim
+	
+	" Border color
+	let g:fzf_layout = {'up':'~90%', 'window': { 'width': 0.8, 'height': 0.8,'yoffset':0.5,'xoffset': 0.5, 'highlight': 'Todo', 'border': 'sharp' } }
+3d84e621d61b3c13151b5011c602ec17|file:///home/jm/.config/nvim/fzf.vim|9|12|V|vim
+	map <leader>b :Buffers<CR>
+302f4639f93c5eacfb08c9c9267d0769|file:///home/jm/.config/nvim/coc-settings.json|62|25|V|json
+	        "C-F": ":Files<CR>"
+76cdb9b4d9490a7ee9539556ce46c5ce|file:///home/jm/.config/nvim/coc-settings.json|62|9|V|json
+	        "f": ":Files<CR>"
+e1d2040aa0d72e1fbeba2463fff8f84a|file:///home/jm/.config/nvim/coc-settings.json|61|1|V|json
+	        "v": "open:vsplit"
+5f90a55d9070c0738382c2670cccd439|file:///home/jm/.config/nvim/coc-settings.json|62|15|v|json
+	open:vsplit
+27928ebc9a1ab4dcb238c6bccfe5ace6|file:///home/jm/.config/nvim/startify.vim|7|1|V|vim
+	          \ { 'type': 'sessions',  'header': ['   Sessions']       },
+27201edb8bc98df131aa0d0ba51320b5|file:///home/jm/.config/nvim/mappings.vim|51|1|V|vim
+	nnoremap <C-l> <C-w>l
+97216e999729b60a7a353ebe91bc9b6b|file:///home/jm/.config/nvim/mappings.vim|39|1|V|vim
+	nnoremap <silent> <C-s> :w<CR>
+0ef17288eb1f074cacc46fee43f9b74f|file:///home/jm/.config/nvim/mappings.vim|38|1|V|vim
+	nnoremap <silent> <C-q> :wq<CR>
+a771918bf795c8b5c0df96b3cff87ab1|file:///home/jm/.config/nvim/init.vim|32|1|V|vim
+	let g:smoothie_no_default_mappings = 1
+ee3677bcca83ece9384b01e43952bf33|file:///home/jm/.config/nvim/mappings.vim|53|21|v|vim
+	PageDown
+0557fa923dcee4d0f86b1409f5c2167f|file:///home/jm/.config/nvim/mappings.vim|52|35|^v|vim
+	Back
+4b496f31b098a8b2f0aa1721e157eb0e|file:///home/jm/.config/nvim/init.vim|1|1|V|vim
+	" PLUG
+4b83d3a2bbaedbf7fe413daf3aa1eb7d|file:///home/jm/.config/nvim/mappings.vim|53|1|V|vim
+	map <leader>k <C-u>
+cebd3ff4ed7479418d53154434315857|file:///home/jm/.config/nvim/mappings.vim|28|1|V|vim
+	nnoremap <silent> <TAB> :bnext<CR>
+5fddb654924c6880ac2718b0088c316f|file:///home/jm/.config/nvim/mappings.vim|31|16|v|vim
+	bnext
+d0ecc31daca618953240249292253ec1|file:///home/jm/.config/nvim/mappings.vim|31|19|v|vim
+	C-S-O
+8097430204f0285fcd6ef7781a2ba392|file:///home/jm/.config/nvim/mappings.vim|31|21|V|vim
+	nnoremap <C-S-O> <C-I>
+7cd560b9243b9aeaee205cc8d2d59271|file:///home/jm/apps/dotfiles-ifg/nvim/init.vim|65|1|V|vim
+	set swapfile
+	set directory^=~/.local/share/nvim/swap//
+7f900689fafdf3e194c38fea1b922e1f|file:///home/jm/apps/dotfiles-ifg/nvim/init.vim|74|1|V|vim
+	set undofile
+	set undodir^=~/.local/share/nvim/undo//
+af36f85462b6892802a1a4a0a5d24184|file:///home/jm/.config/nvim/init.vim|48|1|V|vim
+	hi LineNr ctermbg=NONE guibg=NONE
+	colorscheme vim-material
+9fa998dbb5752928f22aaad0b44e18f9|file:///home/jm/.config/nvim/init.vim|47|1|V|vim
+	let g:material_style = 'oceanic'
+	
+	
+6af98fcedf4fc1a09f3451b2ff4c6c75|file:///home/jm/.config/nvim/init.vim|61|1|V|vim
+	" Airline
+	let g:airline_theme='material'
+	let g:airline_powerline_fonts = 0
+	let g:airline#themes#clean#palette = 1
+	call airline#parts#define_raw('linenr', '%l')
+	call airline#parts#define_accent('linenr', 'bold')
+	let g:airline_section_z = airline#section#create(['%3p%%  ',
+	            \ g:airline_symbols.linenr .' ', 'linenr', ':%c '])
+	let g:airline_section_warning = ''
+	let g:airline#extensions#tabline#enabled = 1
+	let g:airline#extensions#tabline#buffer_min_count = 2   " show tabline only if there is more than 1 buffer
+	let g:airline#extensions#tabline#fnamemod = ':t'        " show only file name on tabs
+96fb5710914565ef68e09aa373a7f92e|file:///home/jm/.config/nvim/init.vim|71|3|v|vim
+	ghlight 
+65f91f0948e6209323661c0026e3a778|file:///home/jm/.config/nvim/init.vim|71|25|v|vim
+	 ctermbg=#00010a guifg=#00010a guibg=#00010a
+8b5ca1e3dd8d89ac5299d49ee5dd7c2e|file:///home/jm/.config/nvim/init.vim|71|10|v|vim
+	ctermfg
+2efacb1a9b56cbb821917dc4166b9509|file:///home/jm/.config/nvim/init.vim|71|10|v|vim
+	#b16286 
+61cc0b151342d4e6d43b615eca1df742|file:///home/jm/.config/nvim/init.vim|71|10|v|vim
+	#00010a 
+7389d19bc43869726a6b3474ae48c242|file:///home/jm/.config/nvim/airline.vim|12|1|V|vim
+	
+	let g:airline_extensions = ['branch', 'hunks', 'coc']
+238ef86d21c17aef693675985ce67541|file:///home/jm/.config/nvim_bak/init.vim|182|1|V|vim
+	" indentLine
+	let g:indentLine_char_list = ['▏']
+	let g:indentLine_setColors = 0
+	let g:indentLine_setConceal = 0                         " actually fix the annoying markdown links conversion
+	let g:indentLine_fileTypeExclude = ['startify']
+d055a97d21ac4f92806d63e38e082b5c|file:///home/jm/test.py|1|1|v|python
+	print("a")
+88a2a07910827e18acb9a179be5fd798|file:///home/jm/.config/nvim/compiler/python.vim|1|27|v|vim
+	thon
+a8e54cec68771daf9cbe48b0568c43ca|file:///home/jm/.config/nvim/coc.vim|20|1|V|vim
+	            \'coc-phpls',
+cb509637b2838562310cfd6d050dd06e|file:///home/jm/.config/nvim/coc.vim|21|19|v|vim
+	phpls
+4562e077163a31d299128b1edfeef00f|file:///home/jm/a.py|9|7|v|python
+	MyClass
+a8cfde6331bd59eb2ac96f8911c4b666|file:///home/jm/a.py|9|15|v|python
+	object
+bc95dfc14146aa23e43f2ea7af04d310|file:///home/jm/a.py|22|12|V|python
+	            
+9858af48444dfefd79e5eb2f65522101|file:///home/jm/a.py|11|1|V|python
+	
+	    """Docstring for MyClass. """
+	
+3212185dc1996fa78d4c55ac2a9235ab|file:///home/jm/a.py|19|9|V|python
+	        self._Docstring for MyClass. = Docstring for MyClass.
+1fa2120097adc1e843b81c1fef42c171|file:///home/jm/a.cpp|8|3|v|cpp
+	int b = a + 1;
+5f44b634d1c3423c3391b371ad4970a3|file:///home/jm/.config/nvim/mappings.vim|80|20|v|vim
+	thon 
+dc99276266f16fd12b6a2c95bf78df90|file:///home/jm/.config/nvim/mappings.vim|80|1|V|vim
+	autocmd filetype py nnoremap <F5> :python %
+665aca7397d4eb34812ac2907ff81b1b|file:///home/jm/.config/nvim/mappings.vim|81|1|v|vim
+	autocmd 
+fc5e8cafd5674f8b9599127787a8f7ee|file:///home/jm/.config/nvim/mappings.vim|81|1|v|vim
+	filetype 
+30913862c9d245a09fc69a2289d2faab|file:///home/jm/a.py|7|1|V|python
+	while True:
+	    newvariable838
+b9abfcb40938ca33e72c57d4aa125e3a|file:///home/jm/a.py|5|1|V|python
+	newvariable838 = c.split("d")
+	newvariable838
+	while True:
+	    newvariable838
+3bb468fcc5f233b60f1a2625342869e1|file:///home/jm/.config/nvim/mappings.vim|80|26|V|vim
+	autocmd filetype py nnoremap <F5> :python %
+	nnoremap <F5> :!python %:p<CR>
+8953bb485641cb9f7bf9eb22332735c2|file:///home/jm/.config/nvim/mappings.vim|80|15|v|vim
+	:!python %:p<CR>
+f66bc22b1a3dbac9d23bff2fd8025987|file:///home/jm/.config/nvim/mappings.vim|38|1|V|vim
+	
+	" Alternate way to save
+3092facdfc80395291ca85f054808ec3|file:///home/jm/.config/nvim/plugged/quickrun.vim/doc/quickrun.txt|395|1|V|help
+		let b:quickrun_config = {'outputter/buffer/append': 1}
+9516dfb15f51c7ee19a4d46b8c0dbe1d|file:///home/jm/.config/nvim/init.vim|102|44|v|vim
+	append
+e6dec152d6a941fccb0a5e8cc2579cc3|file:///home/jm/.config/nvim/init.vim|102|52|v|vim
+	vertical
+3dc4e76ed74d5e58fb687dc1cab2328c|file:///home/jm/.config/nvim/init.vim|102|52|v|vim
+	izontal
+ba736c28cde36f5b560a400aa314c187|file:///home/jm/test.py|3|16|V|python
+	def def funcname(self, parameter_list):
+	    pass
+2000b1503bca9eee0194a561f56f0651|file:///home/jm/test.py|2|5|v|python
+	funcname
+8e6c87a034a7a9db0492c34a347d9920|file:///home/jm/test.py|2|9|v|python
+	parameter_list
+1a1dc91c907325c69271ddf0c944bc72|file:///home/jm/test.py|3|5|v|python
+	pass
+447b7147e84be512208dcc0995d67ebc|file:///home/jm/test.py|3|9|v|python
+	item
+80304554b4295f6ccf9aba92f5d154c0|file:///home/jm/test.py|3|14|v|python
+	iterable
+ff99bdf07c6f7e5f9be270997309b1cb|file:///home/jm/test.py|8|5|v|python
+	target_list
+73e8c337b700892a79cdc84d0908be2a|file:///home/jm/test.py|8|10|v|python
+	expression_list
+a6aaa60c0fbb88605814680cd689de11|file:///home/jm/.config/nvim/coc-settings.json|66|43|V|json
+	    "python.autoComplete.addBrackets": true
+2613c967a4e83bae76d0def77560a7c9|file:///home/jm/test.py|16|1|V|python
+	
+	fun()
+1abf39ebf638ff19dbc6fb1cc8676708|file:///home/jm/Apps/dotfiles-ifg/nvim/init.vim|131|1|V|vim
+	" let g:ale_enabled = 0
+a0012bb8367c63a2c89bec7d3f32abdb|file:///home/jm/test.py|11|1|V|python
+	    asdasd
+476fe68bc72803c3165eca0276ab3930|file:///home/jm/.config/nvim/coc-settings.json|67|46|V|json
+	    "python.analysis.diagnosticEnabled": false
+aa939a4de924e6cf3ede262c4503b359|file:///home/jm/test.py|11|1|V|python
+	    asd
+4d9fe653977dae67729cf9e62e96ff36|file:///home/jm/.config/onedrive/config|1|23|v|
+	FEUP
+28de6432e62a0efa14daefe77442a11f|file:///home/jm/.config/nvim/coc.vim|89|1|V|vim
+	
+	" Use K to show documentation in preview window.
+	nnoremap <silent> K :call <SID>show_documentation()<CR>
+fc35fdc70d5fc69d269883a822c7a53e|file:///home/jm/Documents/Onedrive/FEUP/3%C2%BAAno/3oAno1oSemestre/LTW/Work/1-HTML/online_newspaper.html|2|2|v|html
+	html
+0cbc6611f5540bd0809a388dc95a615b|file:///home/jm/Documents/Onedrive/FEUP/3%C2%BAAno/3oAno1oSemestre/LTW/Work/1-HTML/online_newspaper.html|10|9|v|html
+	Test
+d9e89272e9cd7be476c84be6b03b2291|file:///home/jm/Documents/Onedrive/FEUP/3%C2%BAAno/3oAno1oSemestre/LTW/Work/1-HTML/online_newspaper.html|18|14|v|html
+	http://www.url.com
+20a8772a522f2a862d3123b53f75cb4f|file:///home/jm/Documents/Onedrive/FEUP/3%C2%BAAno/3oAno1oSemestre/LTW/Work/1-HTML/online_newspaper.html|18|19|v|html
+	 target="_blank"
+920247defe780be5194c3f6e004197a5|file:///home/jm/Documents/Onedrive/FEUP/3%C2%BAAno/3oAno1oSemestre/LTW/Work/1-HTML/online_newspaper.html|18|20|v|html
+	Anchor Text
+841a2d689ad86bd1611447453c22c6fc|file:///home/jm/Documents/Onedrive/FEUP/3%C2%BAAno/3oAno1oSemestre/LTW/Work/1-HTML/lotr.html|12|5|v|html
+	body
+21c6ce80d60441a954772dee981c23fb|file:///home/jm/Documents/Onedrive/FEUP/3%C2%BAAno/3oAno1oSemestre/LTW/Work/1-HTML/lotr.html|8|1|V|html
+	    link
+8d786e878973937188c8d7656009a0e2|file:///home/jm/Documents/Onedrive/FEUP/3%C2%BAAno/3oAno1oSemestre/LTW/Work/1-HTML/online_newspaper.html|10|14|v|html
+	</header>
+6a33ea9a2cd45bf96a9ccd1118f372e1|file:///home/jm/Documents/Onedrive/FEUP/3%C2%BAAno/3oAno1oSemestre/LTW/Work/1-HTML/online_newspaper.html|23|8|V|html
+	        <a href="lotr.html">Nice</a>
+6a0b137d6ab7bbd5f489634504ae8e77|file:///home/jm/Documents/Onedrive/FEUP/3%C2%BAAno/3oAno1oSemestre/LTW/Work/1-HTML/online_newspaper.html|13|10|V|html
+	        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec porttitor eros nisi, eget cursus dolor
+	        pellentesque
+	        non. Vivamus ut mi condimentum, feugiat dolor sit amet, pharetra turpis. In ligula nulla, egestas et metus ac,
+	        bibendum dictum odio. Fusce quam tortor, bibendum non blandit eget, pharetra non lectus. Aenean id eros aliquam,
+	        tempor purus et, sagittis ex. Morbi porttitor ex in nunc finibus, quis molestie lacus faucibus. Praesent pretium
+	        commodo massa vitae placerat. Nunc volutpat sed nibh fringilla lobortis. Curabitur eget maximus mauris.
+c6a4a96b4c5cbb39fdf83ccaffc55650|file:///home/jm/Documents/Onedrive/FEUP/3%C2%BAAno/3oAno1oSemestre/LTW/Work/1-HTML/online_newspaper.html|17|1|V|html
+	            <a href="lotr.html">Nice</a>
+eb04c63883d5c7cfecce17c324f9ea9c|file:///home/jm/Documents/Onedrive/FEUP/3%C2%BAAno/3oAno1oSemestre/LTW/Work/1-HTML/online_newspaper.html|17|1|V|html
+	            <li></li>
+3263097ec94edcda59e9496b4067d20b|file:///home/jm/Documents/Onedrive/FEUP/3%C2%BAAno/3oAno1oSemestre/LTW/Work/1-HTML/online_newspaper.html|20|13|v|html
+	<a href="lotr.html">Nice</a>
+7fbcec101cc823a874c257e47e8b347a|file:///home/jm/Documents/Onedrive/FEUP/3%C2%BAAno/3oAno1oSemestre/LTW/Work/1-HTML/online_newspaper.html|20|1|V|html
+	            
+	            <a href="lotr.html">Nice</a>
+	            <a href="lotr.html">Nice</a>
+914d0a4ebc177889b5b89a23f556fd75|file:///home/jm/Documents/Onedrive/FEUP/3%C2%BAAno/3oAno1oSemestre/LTW/Work/1-HTML/online_newspaper.html|17|37|v|html
+	Nice
+ee24c64e02be5bd81c2dfb046007d3fc|file:///home/jm/Documents/Onedrive/FEUP/3%C2%BAAno/3oAno1oSemestre/LTW/Work/1-HTML/online_newspaper.html|19|37|v|html
+	2ice
+4430945c8753fd59116f5b4f69a341f0|file:///home/jm/Documents/Onedrive/FEUP/3%C2%BAAno/3oAno1oSemestre/LTW/Work/1-HTML/online_newspaper.html|16|9|v|html
+	<h</h1>
+8d6ab84ca2af9fccd4e4048694176ebf|file:///home/jm/Documents/Onedrive/FEUP/3%C2%BAAno/3oAno1oSemestre/LTW/Work/1-HTML/online_newspaper.html|15|6|v|html
+	menu
+0b46af9d3e1b4fb161016419682e6da5|file:///home/jm/Documents/Onedrive/FEUP/3%C2%BAAno/3oAno1oSemestre/LTW/Work/1-HTML/online_newspaper.html|25|9|v|html
+	article content
+b5c72c300d16d5455297bf0ddbfc003f|file:///home/jm/Documents/Onedrive/FEUP/3%C2%BAAno/3oAno1oSemestre/LTW/Work/1-HTML/online_newspaper.html|27|1|V|html
+	    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec porttitor eros nisi, eget cursus dolor
+	    pellentesque
+	    non. Vivamus ut mi condimentum, feugiat dolor sit amet, pharetra turpis. In ligula nulla, egestas et metus ac,
+	    bibendum dictum odio. Fusce quam tortor, bibendum non blandit eget, pharetra non lectus. Aenean id eros aliquam,
+	    tempor purus et, sagittis ex. Morbi porttitor ex in nunc finibus, quis molestie lacus faucibus. Praesent pretium
+	    commodo massa vitae placerat. Nunc volutpat sed nibh fringilla lobortis. Curabitur eget maximus mauris.
+f83c524158715991a341036fa7e1361c|file:///home/jm/Documents/Onedrive/FEUP/3%C2%BAAno/3oAno1oSemestre/LTW/Work/1-HTML/online_newspaper.html|42|5|v|html
+	footer content
+e66196bd0419c5aa42c74651ccf0d96b|file:///home/jm/Documents/Onedrive/FEUP/3%C2%BAAno/3oAno1oSemestre/LTW/Work/1-HTML/online_newspaper.html|41|9|V|html
+	<footer>
+	    Author: footer content
+	</footer>
+73d5342eba070f636ac3246f319bf77f|file:///home/jm/Documents/Onedrive/FEUP/3%C2%BAAno/3oAno1oSemestre/LTW/Work/1-HTML/online_newspaper.html|25|9|v|html
+	section
+7fc079f9dc7f3b9663aba5b2b56ae422|file:///home/jm/Documents/Onedrive/FEUP/3%C2%BAAno/3oAno1oSemestre/LTW/Work/1-HTML/online_newspaper.html|27|18|V|html
+	        </section>
+580f58f1c1d471fca824b037278e1b24|file:///home/jm/Documents/Onedrive/FEUP/3%C2%BAAno/3oAno1oSemestre/LTW/Work/1-HTML/online_newspaper.html|24|1|V|html
+	    <article>
+68cd0ce4027e788eef46aa0771b2f522|file:///home/jm/Documents/Onedrive/FEUP/3%C2%BAAno/3oAno1oSemestre/LTW/Work/1-HTML/online_newspaper.html|27|31|V|html
+	                article content
+2cce9d1e66a9c37577e5c77aee4b7cf3|file:///home/jm/Documents/Onedrive/FEUP/3%C2%BAAno/3oAno1oSemestre/LTW/Work/1-HTML/online_newspaper.html|27|22|V|html
+	            </article>
+9e3b8457fccf316d87e4aa61b2f24225|file:///home/jm/Documents/Onedrive/FEUP/3%C2%BAAno/3oAno1oSemestre/LTW/Work/1-HTML/online_newspaper.html|39|18|V|html
+	                dd
+f10616c9a405e0c64e51bd3e58382a22|file:///home/jm/Documents/Onedrive/FEUP/3%C2%BAAno/3oAno1oSemestre/LTW/Work/1-HTML/online_newspaper.html|52|13|V|html
+	        </article>
+2a304a1348456ccd2234cd71a81bd338|file:///home/jm/Documents/Onedrive/FEUP/3%C2%BAAno/3oAno1oSemestre/LTW/Work/1-HTML/tabela.html|7|9|v|html
+	link
+1f1bc03c286fad871bf567b46680221e|file:///home/jm/Documents/Onedrive/FEUP/3%C2%BAAno/3oAno1oSemestre/LTW/Work/1-HTML/tabela.html|13|9|v|html
+	<tr>Student</tr>
+f5c0a1c9384c2e25e79ba1abf5d9a037|file:///home/jm/Documents/Onedrive/FEUP/3%C2%BAAno/3oAno1oSemestre/LTW/Work/1-HTML/tabela.html|13|13|v|html
+	Student
+78859510f218cbdeedc0f5547812cf1f|file:///home/jm/Documents/Onedrive/FEUP/3%C2%BAAno/3oAno1oSemestre/LTW/Work/1-HTML/tabela.html|15|1|V|html
+	            <td>Exam</td>
+b6c38b3d32ccc785e1b1b4595108993f|file:///home/jm/Documents/Onedrive/FEUP/3%C2%BAAno/3oAno1oSemestre/LTW/Work/1-HTML/tabela.html|16|1|V|html
+	            <td>2ndExam</td>
+35f6e5b5503b05a5c0d45a49683a48fd|file:///home/jm/Documents/Onedrive/FEUP/3%C2%BAAno/3oAno1oSemestre/LTW/Work/1-HTML/tabela.html|17|17|v|html
+	2ndExam
+801e1d49b6db3a24bf46c6204ea85ef0|file:///home/jm/Documents/Onedrive/FEUP/3%C2%BAAno/3oAno1oSemestre/LTW/Work/1-HTML/tabela.html|19|1|V|html
+	        <tr></tr>
+b6bfe52a7681ce9326ccb77e6891b312|file:///home/jm/Documents/Onedrive/FEUP/3%C2%BAAno/3oAno1oSemestre/LTW/Work/1-HTML/tabela.html|20|1|V|html
+	            <td>Q1</td>
+e746997028b64af711c1a659a0e50127|file:///home/jm/Documents/Onedrive/FEUP/3%C2%BAAno/3oAno1oSemestre/LTW/Work/1-HTML/tabela.html|15|17|v|html
+	rowspan
+a9ff108e09db3fec2b4df2875b5fdbbe|file:///home/jm/Documents/Onedrive/FEUP/3%C2%BAAno/3oAno1oSemestre/LTW/Work/1-HTML/tabela.html|22|1|V|html
+	            <td>Q3</td>
+71b446aa25df200437e37c24fe9c954e|file:///home/jm/Documents/Onedrive/FEUP/3%C2%BAAno/3oAno1oSemestre/LTW/Work/1-HTML/tabela.html|20|1|V|html
+	            <td>Q1</td>
+	            <td>Q2</td>
+	            <td>Q3</td>
+	            <td rowspan="2">Grade</td>
+71452d9088f28789e13d663480beef8f|file:///home/jm/Documents/Onedrive/FEUP/3%C2%BAAno/3oAno1oSemestre/LTW/Work/1-HTML/tabela.html|30|1|V|html
+	            <td>Code</td>
+ca0dbad92a874b2f69b549293387925e|file:///home/jm/Documents/Onedrive/FEUP/3%C2%BAAno/3oAno1oSemestre/LTW/Work/1-HTML/tabela.html|31|17|v|html
+	Code
+55364664b9400e0ff7c24bfd3f56de53|file:///home/jm/Documents/Onedrive/FEUP/3%C2%BAAno/3oAno1oSemestre/LTW/Work/1-HTML/tabela.html|31|1|V|html
+	            <td>Name</td>
+49ee3087348e8d44e1feda1917443987|file:///home/jm/Documents/Onedrive/FEUP/3%C2%BAAno/3oAno1oSemestre/LTW/Work/1-HTML/tabela.html|32|17|v|html
+	Name
+326c47f03262dad92f57ad5399b0b099|file:///home/jm/Documents/Onedrive/FEUP/3%C2%BAAno/3oAno1oSemestre/LTW/Work/1-HTML/tabela.html|32|1|V|html
+	            <td>8</td>
+45113b9abcdf23218c0713e3c6d2cabd|file:///home/jm/Documents/Onedrive/FEUP/3%C2%BAAno/3oAno1oSemestre/LTW/Work/1-HTML/tabela.html|33|1|V|html
+	            <td>7</td>
+663d2b27d91a3c234330efc5e904a1ea|file:///home/jm/Documents/Onedrive/FEUP/3%C2%BAAno/3oAno1oSemestre/LTW/Work/1-HTML/tabela.html|30|1|V|html
+	            <td>Code</td>
+	            <td>Name</td>
+	            <td>8</td>
+	            <td>7</td>
+	            <td>5</td>
+aa786efd4dcccce7d01b8c9cd647885a|file:///home/jm/Documents/Onedrive/FEUP/3%C2%BAAno/3oAno1oSemestre/LTW/Work/1-HTML/tabela.html|32|1|V|html
+	            <td>8</td>
+	            <td>7</td>
+	            <td>5</td>
+8af62d51e3e4e2e8ebb383553900d1b4|file:///home/jm/Documents/Onedrive/FEUP/3%C2%BAAno/3oAno1oSemestre/LTW/Work/1-HTML/tabela.html|42|1|V|html
+	            <td>80549061</td>
+9fa214c3b77a34ffe2a59e6b9eee35a3|file:///home/jm/Documents/Onedrive/FEUP/3%C2%BAAno/3oAno1oSemestre/LTW/Work/1-HTML/tabela.html|43|17|v|html
+	80549061
+eac5c2fc6530b9ac4e023ce51ea83240|file:///home/jm/Documents/Onedrive/FEUP/3%C2%BAAno/3oAno1oSemestre/LTW/Work/1-HTML/tabela.html|43|1|V|html
+	            <td>John</td>
+61409aa1fd47d4a5332de23cbf59a36f|file:///home/jm/Documents/Onedrive/FEUP/3%C2%BAAno/3oAno1oSemestre/LTW/Work/1-HTML/tabela.html|44|17|v|html
+	John
+a9840d0156c3505c1687331bc26564c9|file:///home/jm/Documents/Onedrive/FEUP/3%C2%BAAno/3oAno1oSemestre/LTW/Work/1-HTML/tabela.html|46|1|V|html
+	            <td>100%</td>
+b666c2b3936b17228adf4b150af7d86a|file:///home/jm/Documents/Onedrive/FEUP/3%C2%BAAno/3oAno1oSemestre/LTW/Work/1-HTML/tabela.html|47|1|V|html
+	            <td>17.6%</td>
+549bfd9a97dd8867675540d891d46290|file:///home/jm/Documents/Onedrive/FEUP/3%C2%BAAno/3oAno1oSemestre/LTW/Work/1-HTML/tabela.html|50|18|v|html
+	7.6%
+f296e29061d78d4c63528458bb9d626b|file:///home/jm/Documents/Onedrive/FEUP/3%C2%BAAno/3oAno1oSemestre/LTW/Work/1-HTML/tabela.html|41|1|V|html
+	        <tr>
+	            <td>80549061</td>
+	            <td>John</td>
+	            <td>70%</td>
+	            <td>100%</td>
+	            <td>100%</td>
+	            <td>17.6</td>
+	            <td colspan="4"></td>
+	            <td>17.6</td>
+	            <td>18</td>
+	        </tr>
+3358e99ad38531dde2567a93498a9942|file:///home/jm/Documents/Onedrive/FEUP/3%C2%BAAno/3oAno1oSemestre/LTW/Work/1-HTML/tabela.html|55|1|V|html
+	            <td>10%</td>
+	            <td>50%</td>
+	            <td>50%</td>
+	            <td>6.8</td>
+ccee1e47fc90824857798bf4ce808538|file:///home/jm/Documents/Onedrive/FEUP/3%C2%BAAno/3oAno1oSemestre/LTW/Work/1-HTML/tabela.html|63|13|V|html
+	            <td colspan="4"></td>
+0e6e141a9d4df5d1da045fca69b7e48d|file:///home/jm/Documents/Onedrive/FEUP/3%C2%BAAno/3oAno1oSemestre/LTW/Work/1-HTML/form.html|11|35|v|html
+	 id="Name" value=""
+bbc7d7ca0dcaabacf7325298a2922551|file:///home/jm/Documents/Onedrive/FEUP/3%C2%BAAno/3oAno1oSemestre/LTW/Work/1-HTML/form.html|12|13|v|html
+	</h4>
+0b8ac11cf86b31657a3d716588cf0f1c|file:///home/jm/Documents/Onedrive/FEUP/3%C2%BAAno/3oAno1oSemestre/LTW/Work/1-HTML/form.html|12|1|V|html
+	    <h4>Name <input type="text" name="Name" value="Your Name"></h4>
+f56935f37ef55ead912050d5e6e92241|file:///home/jm/Documents/Onedrive/FEUP/3%C2%BAAno/3oAno1oSemestre/LTW/Work/1-HTML/form.html|13|5|v|html
+	<h4>Name <input type="text" name="Name" value="Your Name"></h4>
+72dcb9d284b9455e0bcb5a385666b000|file:///home/jm/Documents/Onedrive/FEUP/3%C2%BAAno/3oAno1oSemestre/LTW/Work/1-HTML/form.html|13|9|v|html
+	Age 
+fa5881a4aafaf2629472fd2300394826|file:///home/jm/Documents/Onedrive/FEUP/3%C2%BAAno/3oAno1oSemestre/LTW/Work/1-HTML/form.html|15|13|v|html
+	</br>
+b6c22828b5b1b48cb303e1421b725ee6|file:///home/jm/Documents/Onedrive/FEUP/3%C2%BAAno/3oAno1oSemestre/LTW/Work/1-HTML/form.html|18|9|V|html
+	    </h4>
+aeb136f40a7eccc30d8aab0b6a0449c2|file:///home/jm/Documents/Onedrive/FEUP/3%C2%BAAno/3oAno1oSemestre/LTW/Work/1-HTML/form.html|16|8|V|html
+	    <br>
+ccb7c5ff97e5cef2e4f9dfdf7ea07999|file:///home/jm/Documents/Onedrive/FEUP/3%C2%BAAno/3oAno1oSemestre/LTW/Work/1-HTML/form.html|17|9|V|html
+	    </br>
+382fc907c4dbcb0f9b9a28fed240372d|file:///home/jm/Documents/Onedrive/FEUP/3%C2%BAAno/3oAno1oSemestre/LTW/Work/1-HTML/form.html|12|14|v|html
+	<input type="text" name="Name" value="Your Name">
+8cc9170eb03ee919137b9781fd02a0cb|file:///home/jm/Documents/Onedrive/FEUP/3%C2%BAAno/3oAno1oSemestre/LTW/Work/1-HTML/form.html|16|1|V|html
+	    <input type="radio" name="I Have a bike" id="I Have a bike"> I have a bike
+4db5dd02a67c167541f15c314f67c222|file:///home/jm/Documents/Onedrive/FEUP/3%C2%BAAno/3oAno1oSemestre/LTW/Work/1-HTML/form.html|16|5|v|html
+	<input type="radio" name="I Have a bike" id="I Have a bike"> I have a bike
+fe7148600d5d116cf8cede519e351418|file:///home/jm/Documents/Onedrive/FEUP/3%C2%BAAno/3oAno1oSemestre/LTW/Work/1-HTML/form.html|16|5|v|html
+	input:radio
+1cfcaa3fe7bae3b66973c9e7ef34b1ad|file:///home/jm/Documents/Onedrive/FEUP/3%C2%BAAno/3oAno1oSemestre/LTW/Work/1-HTML/form.html|16|1|V|html
+	    <input type="radio" name="less 18" id="less 18" < 18
+b383c9fefa0db87aed982f8617dcab5a|file:///home/jm/Documents/Onedrive/FEUP/3%C2%BAAno/3oAno1oSemestre/LTW/Work/1-HTML/form.html|17|5|v|html
+	<input type="radio" name="less 18" id="less 18" < 18
+b6a792d8a1fc08aac0580e4a835598a2|file:///home/jm/Documents/Onedrive/FEUP/3%C2%BAAno/3oAno1oSemestre/LTW/Work/1-HTML/form.html|17|5|v|html
+	<input type="text" name="" id="" value="">
+05b41c6546f11afd67a6debc98e477ca|file:///home/jm/Documents/Onedrive/FEUP/3%C2%BAAno/3oAno1oSemestre/LTW/Work/1-HTML/form.html|13|8|V|html
+	    <h4>
+4ee892f8e7c39f3f70c9a180e5b74212|file:///home/jm/Documents/Onedrive/FEUP/3%C2%BAAno/3oAno1oSemestre/LTW/Work/1-HTML/form.html|15|1|V|html
+	    Age
+	    <input type="radio" name="less 18" id="less 18"> &lt 18
+	    <input type="radio" name="19-35" id="19-35">19-35
+	    <input type="radio" name="36-49" id="36-49">36-49
+	    <input type="radio" name="more 49>" id="more 49>"> &gt 49
+8abb22527bc84ea9bcb5909206748934|file:///home/jm/Documents/Onedrive/FEUP/3%C2%BAAno/3oAno1oSemestre/LTW/Work/1-HTML/form.html|12|1|V|html
+	    <br>
+	    Name
+	    <input type="text" name="Name" value="Your Name">
+	    </br>
+8ce309c83fc652c444c6e66b208bfdd7|file:///home/jm/Documents/Onedrive/FEUP/3%C2%BAAno/3oAno1oSemestre/LTW/Work/1-HTML/form.html|26|30|v|html
+	Name" value="Your Name">
+1bd0f8357040ccb790b6d4793103c05d|file:///home/jm/Documents/Onedrive/FEUP/3%C2%BAAno/3oAno1oSemestre/LTW/Work/1-HTML/form.html|31|19|v|html
+	some_name
+1942aa20fce2d88bda9238691696672b|file:///home/jm/Documents/Onedrive/FEUP/3%C2%BAAno/3oAno1oSemestre/LTW/Work/1-HTML/form.html|31|44|v|html
+	 multiple size="1"
+aed391ab0e7c74684e2fb7de22c3dba6|file:///home/jm/Documents/Onedrive/FEUP/3%C2%BAAno/3oAno1oSemestre/LTW/Work/1-HTML/form.html|32|16|v|html
+	 value="option"
+ef3e30e070f70244fd6578d88a6b77ac|file:///home/jm/Documents/Onedrive/FEUP/3%C2%BAAno/3oAno1oSemestre/LTW/Work/1-HTML/form.html|32|24|v|html
+	option
+ea71b362e3ea9969db085abfccdeb10d|file:///home/jm/Documents/Onedrive/FEUP/3%C2%BAAno/3oAno1oSemestre/LTW/Work/1-HTML/form.html|32|35|v|html
+	Portugal
+87d9238532d138956a77a53e370f6dac|file:///home/jm/Documents/Onedrive/FEUP/3%C2%BAAno/3oAno1oSemestre/LTW/Work/1-HTML/form.html|32|1|V|html
+	        <option value="Pot" selected>Portugal</option>
+cebfc04f7c4fe4c7ebf7dcdad5fc2330|file:///home/jm/Documents/Onedrive/FEUP/3%C2%BAAno/3oAno1oSemestre/LTW/Work/1-HTML/form.html|11|1|v|html
+	    <h1>Form</h1>
+66fc0c023a0e701257f644bc66a05dfd|file:///home/jm/Documents/Onedrive/FEUP/3%C2%BAAno/3oAno1oSemestre/LTW/Work/1-HTML/form.html|14|11|V|html
+	</fieldset>
+eb4f0990be83c2cda65c8da089758664|file:///home/jm/Documents/Onedrive/FEUP/3%C2%BAAno/3oAno1oSemestre/LTW/Work/1-HTML/form.html|41|1|V|html
+	        <input type="checkbox" name="Rock" id="Rock">
+b00c9f4ad9d3eab7c182f22d4e14d531|file:///home/jm/Documents/Onedrive/FEUP/3%C2%BAAno/3oAno1oSemestre/LTW/Work/1-HTML/form.html|42|9|v|html
+	<input type="checkbox" name="Rock" id="Rock">
+4d3ec8e73dbf0499e3b58ba206a4b301|file:///home/jm/Documents/Onedrive/FEUP/3%C2%BAAno/3oAno1oSemestre/LTW/Work/1-HTML/form.html|40|13|v|html
+	</br>Interests
+3d86c7096d654a0c9b0e4cd8f38de123|file:///home/jm/Documents/Onedrive/FEUP/3%C2%BAAno/3oAno1oSemestre/LTW/Work/1-HTML/form.html|40|1|v|html
+	        <br>Interests</br>
+018dbf6dd21356aca13ac619c745664b|file:///home/jm/Documents/Onedrive/FEUP/3%C2%BAAno/3oAno1oSemestre/LTW/Work/1-HTML/form.html|43|14|V|html
+	        Others
+5c67d7a216c8d617b4e7e0aa308234f9|file:///home/jm/Documents/Onedrive/FEUP/3%C2%BAAno/3oAno1oSemestre/LTW/Work/1-HTML/form.html|19|9|V|html
+	        Age
+715a1aad9ffccda9cb7e9c93c3ea9e52|file:///home/jm/Documents/Onedrive/FEUP/3%C2%BAAno/3oAno1oSemestre/LTW/Work/1-HTML/form.html|21|66|V|html
+	        <input type="text" name="less 18" id="less 18" value="" />
+e37e8d912e8f7b8f9b5ef9452ba47ff1|file:///home/jm/Documents/Onedrive/FEUP/3%C2%BAAno/3oAno1oSemestre/LTW/Work/1-HTML/form.html|20|79|v|html
+	less
+9ef5ec91335d9dfff74df67d6762e064|file:///home/jm/Documents/Onedrive/FEUP/3%C2%BAAno/3oAno1oSemestre/LTW/Work/1-HTML/form.html|20|1|V|html
+	        <input type="radio" name="less 18" id="less 18"> <label for="less 18">&lt 18</label>
+95416cb4bb1566693fbe04bc6a4a69fe|file:///home/jm/Documents/Onedrive/FEUP/3%C2%BAAno/3oAno1oSemestre/LTW/Work/1-HTML/form.html|20|58|v|html
+	<label for="less 18">&lt 18</label>
+3357155320a95d7239264658a625ca8d|file:///home/jm/Documents/Onedrive/FEUP/3%C2%BAAno/3oAno1oSemestre/LTW/Work/1-HTML/form.html|21|70|v|html
+	less 18
+b09c3748207ec4b89ae845e45cf31ce0|file:///home/jm/Documents/Onedrive/FEUP/3%C2%BAAno/3oAno1oSemestre/LTW/Work/1-HTML/form.html|22|70|v|html
+	19-35
+46c5bd946d1362d3ee839f6cab6844fe|file:///home/jm/Documents/Onedrive/FEUP/3%C2%BAAno/3oAno1oSemestre/LTW/Work/1-HTML/form.html|22|77|v|html
+	&lt 18
+bf9a19a7f4b6af09b4455b038502e262|file:///home/jm/Documents/Onedrive/FEUP/3%C2%BAAno/3oAno1oSemestre/LTW/Work/1-HTML/form.html|21|77|v|html
+	36-49
+820b578670b682bae2ce743a06988cf2|file:///home/jm/Documents/Onedrive/FEUP/3%C2%BAAno/3oAno1oSemestre/LTW/Work/1-HTML/form.html|27|1|V|html
+	        Profession
+8f72a642c9550fd2ef88fc2a69a424be|file:///home/jm/Documents/Onedrive/FEUP/3%C2%BAAno/3oAno1oSemestre/LTW/Work/1-HTML/form.html|15|1|V|html
+	        Name
+58f9d0d4d8665a3a3e8255b0b47d60d2|file:///home/jm/Documents/Onedrive/FEUP/3%C2%BAAno/3oAno1oSemestre/LTW/Work/1-HTML/form.html|25|12|V|html
+	        <br>
+a3f82d5b6d2310b377a7179266de437c|file:///home/jm/Documents/Onedrive/FEUP/3%C2%BAAno/3oAno1oSemestre/LTW/Work/1-HTML/form.html|26|13|V|html
+	        </br>
+26854fd7285d9de9ad931479e120cab4|file:///home/jm/Documents/Onedrive/FEUP/3%C2%BAAno/3oAno1oSemestre/LTW/Work/1-HTML/form.html|15|68|v|html
+	 <label for="Name">Name</label>
+7abe8b854409b52df8b2ce3ef9c3fa3b|file:///home/jm/Documents/Onedrive/FEUP/3%C2%BAAno/3oAno1oSemestre/LTW/Work/1-HTML/form.html|20|23|v|html
+	(?1:_:\LAge\E)
+4408e02702a65d5a90bbdde97f1f97ee|file:///home/jm/Documents/Onedrive/FEUP/3%C2%BAAno/3oAno1oSemestre/LTW/Work/1-HTML/form.html|24|23|V|html
+	        <input type="radio" name="less 18" id="less 18"> <label for="less 18">&lt 18</label>
+	        <input type="radio" name="19-35" id="19-35"><label for="19-35">19-35</label>
+	        <input type="radio" name="36-49" id="36-49"><label for="36-49">36-49</label>
+	        <input type="radio" name="more 49>" id="more 49>"><label for="more 49">&gt 49</label>
+312db1d681d14524e7e0d41bdb81283c|file:///home/jm/Documents/Onedrive/FEUP/3%C2%BAAno/3oAno1oSemestre/LTW/Work/1-HTML/form.html|19|9|V|html
+	        <label for="Age">Age</label>
+a4e78f0f4298699583d0a121c8664024|file:///home/jm/Documents/Onedrive/FEUP/3%C2%BAAno/3oAno1oSemestre/LTW/Work/1-HTML/form.html|24|9|V|html
+	            <input type="radio" name="more 49>" id="more 49>"><label for="more 49">&gt 49</label>
+59716c97497eb9694541f7c3d37b1a4d|file:///home/jm/Documents/Onedrive/FEUP/3%C2%BAAno/3oAno1oSemestre/LTW/Work/1-HTML/form.html|30|9|v|html
+	Country
+0337387a451ce2d5942bfcc0522e7a23|file:///home/jm/Documents/Onedrive/FEUP/3%C2%BAAno/3oAno1oSemestre/LTW/Work/1-HTML/form.html|45|1|V|html
+	        <br><input type="checkbox" name="Rock" id="Rock"> Rock</br>
+	        <br><input type="checkbox" name="Hiking" id="Hiking"> Hiking</br>
+	        <textarea name="Other interests" rows="8" cols="40">
+	            Other Interests
+	        </textarea>
+1d87a1b45988029652bdec8525632e68|file:///home/jm/Documents/Onedrive/FEUP/3%C2%BAAno/3oAno1oSemestre/LTW/Work/1-HTML/form.html|40|9|V|html
+	        Interests
+cf8ab67fc55f03c8c0acc24306de753f|file:///home/jm/Documents/Onedrive/FEUP/3%C2%BAAno/3oAno1oSemestre/LTW/Work/1-HTML/form.html|46|13|v|html
+	<textarea name="Other interests" rows="8" cols="40">
+25d73380299045e0a58eb39c0bb48993|file:///home/jm/Documents/Onedrive/FEUP/3%C2%BAAno/3oAno1oSemestre/LTW/Work/1-HTML/form.html|46|27|V|html
+	            Other Interests
+7bcb11ce79ae611afb6defad899da9e6|file:///home/jm/Documents/Onedrive/FEUP/3%C2%BAAno/3oAno1oSemestre/LTW/Work/1-HTML/form.html|45|58|V|html
+	            <label for="Interests">Other Interests</label>
+e0c759312bdc9f6fd1db59e625dc9ebb|file:///home/jm/Documents/Onedrive/FEUP/3%C2%BAAno/3oAno1oSemestre/LTW/Work/1-HTML/form.html|46|1|V|html
+	            </textarea>
+1cb251ec0d568de6a929b520c4aed8d1|file:///home/jm/Documents/Onedrive/FEUP/3%C2%BAAno/3oAno1oSemestre/LTW/Work/1-HTML/form.html|48|9|v|html
+	text
+30869a7a63d65244ca423a221517fe88|file:///home/jm/Documents/Onedrive/FEUP/3%C2%BAAno/3oAno1oSemestre/LTW/Work/1-HTML/form.html|47|12|V|html
+	        <br><textarea name="How Find" rows="8" cols="40">How Find?</textarea></br>
+82828f2579fb0c80f1a3b7d466dec09b|file:///home/jm/Documents/Onedrive/FEUP/3%C2%BAAno/3oAno1oSemestre/LTW/Work/1-HTML/form.html|44|9|V|html
+	            <br><textarea name="Other interests" rows="8" cols="40" id="Interests">Other Interests <\textarea></br>
+88f4cb5bcf0785adbe80825eb478f7d1|file:///home/jm/Documents/Onedrive/FEUP/3%C2%BAAno/3oAno1oSemestre/LTW/Work/1-HTML/form.html|44|9|V|html
+	        </fieldset>
+7383dbfdfebf3622d619ce526b26d4fa|file:///home/jm/Documents/Onedrive/FEUP/3%C2%BAAno/3oAno1oSemestre/LTW/Work/1-HTML/form.html|11|19|v|html
+	form_submit
+32905322f28321940ea521e09dbc41ac|file:///home/jm/Documents/Onedrive/FEUP/3%C2%BAAno/3oAno1oSemestre/LTW/Work/1-HTML/form.html|13|11|V|html
+	    </form>
+d179d998afd076a5d660730e57a80775|file:///home/jm/Documents/Onedrive/FEUP/3%C2%BAAno/3oAno1oSemestre/LTW/Work/1-HTML/facebuk.html|12|9|v|html
+	navigation links
+c18e609d8b18943793ebb2bf9e6838eb|file:///home/jm/Documents/Onedrive/FEUP/3%C2%BAAno/3oAno1oSemestre/LTW/Work/1-HTML/facebuk.html|16|1|V|html
+	            <li><a href="friends.html">Friends</a></li>
+28f20a02bf8a021fab4fcec48afb584e|file:///home/jm/Documents/Onedrive/FEUP/3%C2%BAAno/3oAno1oSemestre/LTW/Work/1-HTML/facebuk.html|17|26|v|html
+	friends
+3d594614f445f6b00014e9b77730b833|file:///home/jm/Documents/Onedrive/FEUP/3%C2%BAAno/3oAno1oSemestre/LTW/Work/1-HTML/facebuk.html|17|41|v|html
+	Friends
+3e1aa7e814e6b3561c06d62769835706|file:///home/jm/Documents/Onedrive/FEUP/3%C2%BAAno/3oAno1oSemestre/LTW/Work/1-HTML/facebuk.html|17|1|V|html
+	            <li><a href="messages.html">Messages</a></li>
+d539206f43746a81d8621e264398e5a0|file:///home/jm/Documents/Onedrive/FEUP/3%C2%BAAno/3oAno1oSemestre/LTW/Work/1-HTML/facebuk.html|18|26|v|html
+	messages.html
+41de6d6cfb8953c021bbe4ba0701c8a1|file:///home/jm/Documents/Onedrive/FEUP/3%C2%BAAno/3oAno1oSemestre/LTW/Work/1-HTML/facebuk.html|18|40|v|html
+	Messages
+2b59cba6aff26d8cda5bf2842b54d22a|file:///home/jm/Documents/Onedrive/FEUP/3%C2%BAAno/3oAno1oSemestre/LTW/Work/1-HTML/facebuk.html|29|13|v|html
+	Ayame fokiu donade tampe 2020-09-25
+c772e94a2623a6648087a8f5cbaf8dbb|file:///home/jm/Documents/Onedrive/FEUP/3%C2%BAAno/3oAno1oSemestre/LTW/Work/1-HTML/facebuk.html|29|35|V|html
+	        <h4></h4> AHHHHHHHHHHHHHHHH
+9ca03e979d60943cc3049e74fb0161a8|file:///home/jm/Documents/Onedrive/FEUP/3%C2%BAAno/3oAno1oSemestre/LTW/Work/1-HTML/facebuk.html|30|17|v|html
+	(?1:_:\LAyame\E)(?1:_:\L \E)(?1:_:\Lfokiu\E)(?1:_:\L \E)(?1:_:\Ldonade\E)(?1:_:\L \E)(?1:_:\Ltampe\E)(?1:_:\L \E)(?1:_:\L2020\E)-(?1:_:\L09\E)-(?1:_:\L25\E)
+63d49310ce156c2d1690dc87a7f8a6ef|file:///home/jm/Documents/Onedrive/FEUP/3%C2%BAAno/3oAno1oSemestre/LTW/Work/1-HTML/facebuk.html|31|1|V|html
+	            <ul>
+	                
+	            </ul>
+f9c67d6ab57edabe2eababd33d2ef240|file:///home/jm/Documents/Onedrive/FEUP/3%C2%BAAno/3oAno1oSemestre/LTW/Work/1-HTML/facebuk.html|32|1|V|html
+	                <li>Comment1</li>
+098c016e0eebea84d894fdacbf7c5fc9|file:///home/jm/Documents/Onedrive/FEUP/3%C2%BAAno/3oAno1oSemestre/LTW/Work/1-HTML/facebuk.html|29|1|V|html
+	        <fieldset id="Post1" class="Post">
+	            <legend>Ayame fokiu donade tampe 2020-09-25</legend>
+	            <ol>
+	                <li>Comment1</li>
+	                <li>Comment2</li>
+	                <li>Comment3</li>
+	            </ol>
+	        </fieldset>
+e8f63bf9f4e88189d112c7b82cb78862|file:///home/jm/Documents/Onedrive/FEUP/3%C2%BAAno/3oAno1oSemestre/LTW/Work/1-HTML/facebuk.html|32|21|v|html
+	Comment1
+f8b92cfbda913ad44a184c2e764ebb05|file:///home/jm/Documents/Onedrive/FEUP/3%C2%BAAno/3oAno1oSemestre/LTW/Work/1-HTML/facebuk.html|34|21|v|html
+	Comment3
+7f7db0967f5dc21870d191e1b6966647|file:///home/jm/Documents/Onedrive/FEUP/3%C2%BAAno/3oAno1oSemestre/LTW/Work/1-HTML/facebuk.html|39|21|v|html
+	Ayame fokiu donade tampe
+3d8ddd8b49a253225c68b9631c466b92|file:///home/jm/Documents/Onedrive/FEUP/3%C2%BAAno/3oAno1oSemestre/LTW/Work/1-HTML/online_newspaper.html|25|1|V|html
+	        <h3>Sub1</h3>
+5ca323ef316b8e23943f30fd4e92a7ab|file:///home/jm/Documents/Onedrive/FEUP/3%C2%BAAno/3oAno1oSemestre/LTW/Work/1-HTML/online_newspaper.html|37|9|V|html
+	        <h3>Sub2</h3>
+c9b11eb29d3ca904c6459d24391bafdc|file:///home/jm/todo.md|4|1|V|markdown
+	  - compile
+6e2cb593bbad72f5a2290c774e871ad2|file:///home/jm/Documents/Onedrive/FEUP/3%C2%BAAno/3oAno1oSemestre/LAIG/Work/laig-t03-g09/README.md|6|17|v|markdown
+	Doe         
+de90ea6fee1e3cff395eb8c18f4ce530|file:///home/jm/Documents/Onedrive/FEUP/3%C2%BAAno/3oAno1oSemestre/LAIG/Work/laig-t03-g09/README.md|6|23|v|markdown
+	201801010
+1c272047233576d77a9b9a1acfdf741c|file:///home/jm/Documents/Onedrive/FEUP/3%C2%BAAno/3oAno1oSemestre/LAIG/Work/laig-t03-g09/README.md|7|3|v|markdown
+	Jane Doe
+f91857c7005bae769d7d628794e124b0|file:///home/jm/Documents/Onedrive/FEUP/3%C2%BAAno/3oAno1oSemestre/LAIG/Work/laig-t03-g09/README.md|7|22|v|markdown
+	201801011
+966c19166972016238833ce2e8b5ab25|file:///home/jm/Documents/Onedrive/FEUP/3%C2%BAAno/3oAno1oSemestre/LAIG/Work/laig-t03-g09/README.md|6|40|v|markdown
+	707093
+a9473ded85aa51851deb4859cdd53f98|file:///home/jm/Documents/Onedrive/FEUP/3%C2%BAAno/3oAno1oSemestre/LAIG/Work/laig-t03-g09/README.md|6|46|v|markdown
+	                
+15d8e9ab8ff83db81fa33664b9a98877|file:///home/jm/Documents/Onedrive/FEUP/3%C2%BAAno/3oAno1oSemestre/LAIG/Work/laig-t03-g09/README.md|1|1|V|markdown
+	# LAIG 2020/2021
+	
+	## Group T03G09
+	| Name             | Number    | E-Mail             |
+	| ---------------- | --------- | ------------------ |
+	| João Martins     | 201806436 | up201806436        |
+	| Ivo Savedraa     | 201707093 | up201707093        |
+	
+	----
+	
+	## Projects
+	
+	### [TP1 - Scene Graph](TP1)
+	
+	- (items briefly describing main strong points)
+	- Scene
+	  - (Brief description of the created scene)
+	  - (relative link to the scene)
+	
+	-----
+	
+	### [TP2 - ...](TP2)
+	- (items briefly describing main strong points)
+	
+	----
+	
+	### [TP3 - ...](TP3)
+	- (items briefly describing main strong points)
+	
+7bb0edd98f22430a03b67f853e83c2ca|file:///home/jm/Documents/Onedrive/FEUP/3%C2%BAAno/3oAno1oSemestre/LAIG/Work/laig-t03-g09/README.md|6|55|v|markdown
+	        
+ed35eea221a6a2bce6b072126a2b83be|file:///home/jm/a.cpp|6|3|v|cpp
+	int a = 5;
+e7a7617a51da7229eec910c955e76987|file:///home/jm/a.cpp|5|1|V|cpp
+	int main(int argc, char *argv[]) {
+	  int a = 5;
+23ce2f3339ca68277cce333dfc8f31ec|file:///home/jm/a.cpp|5|12|V|cpp
+	int main(int argc, char *argv[]) {
+a8ea67cf5dccbe38502c4814170e6fb3|file:///home/jm/.config/aliases|3|1|V|
+	alias LTWw="cd ~/Documents/Onedrive/FEUP/3ºAno/3oAno1oSemestre/LTW/Work"
+c4139d444c5c24f8dfa4214b7f83bad0|file:///home/jm/.config/aliases|4|1|V|
+	alias LTWa="cd ~/Documents/Onedrive/FEUP/3ºAno/3oAno1oSemestre/LTW/Work"
+0f9263536b9fc61ada745644735bfd8f|file:///home/jm/.config/aliases|4|69|v|
+	Work
+6a1cd59ebfc95857aa6e65839227aad8|file:///home/jm/.config/aliases|3|1|V|
+	alias LTWa="cd ~/Documents/Onedrive/FEUP/3ºAno/3oAno1oSemestre/LTW/Assets"
+	alias LTWc="cd ~/Documents/Onedrive/FEUP/3ºAno/3oAno1oSemestre/LTW/Classes"
+	alias LTWw="cd ~/Documents/Onedrive/FEUP/3ºAno/3oAno1oSemestre/LTW/Work"
+53662fe5f2c5179046a4a791225c0e10|file:///home/jm/.config/aliases|6|7|v|
+	LTWa
+dff4524187c7456b908d120e21d36148|file:///home/jm/.config/aliases|7|7|v|
+	LTWc
+c5d80eaaf74fc535372fdbae57acbc6b|file:///home/jm/.config/aliases|8|7|v|
+	LTWw
+f8ad8978da03a79337c8df1bf3142f21|file:///home/jm/.config/aliases|6|1|V|
+	alias LAIGa="cd ~/Documents/Onedrive/FEUP/3ºAno/3oAno1oSemestre/LAIG/Assets"
+	alias LAIGc="cd ~/Documents/Onedrive/FEUP/3ºAno/3oAno1oSemestre/LAIG/Classes"
+	alias LAIGw="cd ~/Documents/Onedrive/FEUP/3ºAno/3oAno1oSemestre/LAIG/Work"
+f7b5c369b21bbb565996ebd02066391b|file:///home/jm/.config/aliases|9|7|v|
+	LAIGa
+f615ba2fb9cb5bf6c609a1e91db887a4|file:///home/jm/.config/aliases|10|7|v|
+	LAIGc
+dbc8bdf44d2ffea0cad141d636ad901d|file:///home/jm/.config/aliases|11|7|v|
+	LAIGw
+2f163a9dca30996915a85f89d671a453|file:///home/jm/.config/aliases|9|66|v|
+	LAIG
+2edd9716859c03220c820eca11bdca9b|file:///home/jm/.config/aliases|9|1|V|
+	alias PLOGa="cd ~/Documents/Onedrive/FEUP/3ºAno/3oAno1oSemestre/PLOG/Assets"
+	alias PLOGc="cd ~/Documents/Onedrive/FEUP/3ºAno/3oAno1oSemestre/PLOG/Classes"
+	alias PLOGw="cd ~/Documents/Onedrive/FEUP/3ºAno/3oAno1oSemestre/PLOG/Work"
+b5cd23d11d9acbed8e7281a151308caf|file:///home/jm/.config/aliases|12|7|v|
+	PLOGa
+8e19f7ae1ae1001ed805b585d9b5f671|file:///home/jm/.config/aliases|13|7|v|
+	PLOGc
+c13ae1d95e005ed33296595477dbdcf1|file:///home/jm/.config/aliases|14|7|v|
+	PLOGw
+5dca6f5305a6f9d08c378dddbe25c444|file:///home/jm/.config/aliases|12|66|v|
+	PLOG
+98015f29fdfda172906642d8b214d2cf|file:///home/jm/.config/aliases|12|1|V|
+	alias RCOMa="cd ~/Documents/Onedrive/FEUP/3ºAno/3oAno1oSemestre/RCOM/Assets"
+	alias RCOMc="cd ~/Documents/Onedrive/FEUP/3ºAno/3oAno1oSemestre/RCOM/Classes"
+	alias RCOMw="cd ~/Documents/Onedrive/FEUP/3ºAno/3oAno1oSemestre/RCOM/Work"
+eebdfea6f9146f6d42a5dab3e682833f|file:///home/jm/.config/aliases|15|7|v|
+	RCOMa
+8aa2f899ab49f13bad6c79bb45e2b091|file:///home/jm/.config/aliases|16|7|v|
+	RCOMc
+787ad2b0a2a76bd7ac445e146c82504b|file:///home/jm/.config/aliases|17|7|v|
+	RCOMw
+0f8665ef7fe5aac7c1fc5ddc51cb2f75|file:///home/jm/.config/aliases|15|66|v|
+	RCOM
+f1d33941958d29ded13de92b1814d5c1|file:///home/jm/Apps/dotfiles-ifg/aliasrc|6|1|V|conf
+	alias   cd..="cd .."
+	alias   ...="cd ../.."
+	alias   cd...="cd ../.."
+e0298573799ba687d8744261451ee8c9|file:///home/jm/Apps/dotfiles-ifg/aliasrc|11|1|V|conf
+	alias   ll="ls -lh --group-directories-first --color=auto"
+	alias   lll="ls -lAh --group-directories-first --color=auto"
+	alias   llll="ls -lAh --group-directories-first --color=auto"
+e078d77282256787d6fdc9da23cba06f|file:///home/jm/Apps/dotfiles-ifg/aliasrc|31|1|V|conf
+	alias   cp="cp -i"
+	alias   ln="ln -i"
+	alias   mv="mv -i"
+	alias   rm="rm -I"
+	alias   chown="chown --preserve-root"
+	alias   chmod="chmod --preserve-root"
+	alias   chgrp="chgrp --preserve-root"
+1d92585716c2950341d67d074b5c328b|file:///home/jm/Apps/dotfiles-ifg/aliasrc|50|1|V|conf
+	alias   clndep='sudo pacman -R $(pacman -Qdtq)'
+	alias   clnrep="printf 'Cleaning uninstalled packages\n'; sudo paccache -ruk0; printf 'Leaving last version of installed packages\n'; sudo paccache -rk1"
+cdb308670f23fed016b9c272d1dde2f1|file:///home/jm/.config/aliases|2|1|V|
+	alias ls=colorls -x --sd -t
+e50447808fdf5d6a2275eb305926117c|file:///home/jm/.config/aliases|1|1|V|
+	alias bime=nvim
+	alias ls="colorls -x --sd -t"
+	alias l="colorls -Al --sd -t"
+4dd1622b158fb899b5736212d4e86367|file:///home/jm/.config/aliases|2|1|V|
+	alias ls="colorls -x --sd -t"
+82dc447a793db73a496f21ff62309ef0|file:///home/jm/.config/aliases|4|18|v|
+	 -x --sd -t
+6767b2efbf519f5c4b72ec47a218e15e|file:///home/jm/.config/aliases|4|1|V|
+	alias ls="colorls"
+4f7afb84a8c109206a537de73137dbbd|file:///home/jm/.config/aliases|25|1|V|
+	#alias   ll="ls -lh --group-directories-first --color=auto"
+	#alias   lll="ls -lAh --group-directories-first --color=auto"
+	#alias   llll="ls -lAh --group-directories-first --color=auto"
+ca99335ef15fb9df035433f7c2ed5adb|file:///home/jm/.config/aliases|37|1|V|
+	alias   ls="colorls"
+7249cb3cb9fce0d5d9462e823de80d18|file:///home/jm/.config/aliases|1|1|V|
+	alias bime=nvim
+60f5f31e8d6e057539d92a4c12dde3f7|file:///home/jm/.zshrc|3|1|V|zsh
+	echo "?"
+b262b879de20301f46b56eaade7e2fc5|file:///home/jm/.config/aliases|2|1|V|
+	alias ls="colorls -x --sd -t"
+	alias l="colorls -Al --sd -t"
+48b6f3039b94577818389fc1cfad0c2b|file:///home/jm/.zshrc|79|1|V|zsh
+		zsh-interactive-cd
+fb1cd61101a26ef9a8e278ae3852b41e|file:///home/jm/.zshrc|78|1|V|zsh
+		git
+		sudo
+		zsh-autosuggestions
+87d1753f8feea6d3aa917b57c90259ba|file:///home/jm/.zshrc|9|1|V|zsh
+	
+	# Load aliases
+	source ~/.config/aliases
+5691b95b6f4b71da69f81c15ccc06938|file:///home/jm/.zshrc|110|1|V|zsh
+	# vim:ft=zsh ts=2 sw=2 sts=2 et fenc=utf-8
+	################################################################
+	# Powerlevel10k Theme
+	# https://github.com/romkatv/powerlevel10k
+	#
+	# Forked from Powerlevel9k Theme
+	# https://github.com/bhilburn/powerlevel9k
+	#
+	# Which in turn was forked from Agnoster Theme
+	# https://github.com/robbyrussell/oh-my-zsh/blob/74177c5320b2a1b2f8c4c695c05984b57fd7c6ea/themes/agnoster.zsh-theme
+	################################################################
+	
+	# Temporarily change options.
+	'builtin' 'local' '-a' '__p9k_src_opts'
+	[[ ! -o 'aliases'         ]] || __p9k_src_opts+=('aliases')
+	[[ ! -o 'sh_glob'         ]] || __p9k_src_opts+=('sh_glob')
+	[[ ! -o 'no_brace_expand' ]] || __p9k_src_opts+=('no_brace_expand')
+	'builtin' 'setopt' 'no_aliases' 'no_sh_glob' 'brace_expand'
+	
+	(( $+__p9k_root_dir )) || typeset -gr __p9k_root_dir=${POWERLEVEL9K_INSTALLATION_DIR:-${${(%):-%x}:A:h}}
+	(( $+__p9k_intro )) || {
+	  # Leading spaces before `local` are important. Otherwise Antigen will remove `local` (!!!).
+	  # __p9k_trapint is to work around bugs in zsh: https://www.zsh.org/mla/workers/2020/msg00612.html.
+	  # Likewise for `trap ":"` instead of the plain `trap ""`.
+	  typeset -gr __p9k_intro_base='emulate -L zsh -o no_hist_expand -o extended_glob -o no_prompt_bang -o prompt_percent -o no_prompt_subst -o no_aliases -o no_bg_nice -o typeset_silent
+	  (( $+__p9k_trapped )) || { local -i __p9k_trapped; trap : INT; trap "trap ${(q)__p9k_trapint:--} INT" EXIT }
+	  local -a match mbegin mend
+	  local -i MBEGIN MEND OPTIND
+	  local MATCH OPTARG IFS=$'\'' \t\n\0'\'
+	  typeset -gr __p9k_intro_locale='[[ $langinfo[CODESET] != (utf|UTF)(-|)8 ]] && _p9k_init_locale && { [[ -n $LC_ALL ]] && local LC_ALL=$__p9k_locale || local LC_CTYPE=$__p9k_locale }'
+	  typeset -gr __p9k_intro_no_locale="${${__p9k_intro_base/ match / match reply }/ MATCH / MATCH REPLY }"
+	  typeset -gr __p9k_intro_no_reply="$__p9k_intro_base; $__p9k_intro_locale"
+	  typeset -gr __p9k_intro="$__p9k_intro_no_locale; $__p9k_intro_locale"
+	}
+	
+	zmodload zsh/langinfo
+	
+	function _p9k_init_locale() {
+	  if (( ! $+__p9k_locale )); then
+	    typeset -g __p9k_locale=
+	    (( $+commands[locale] )) || return
+	    local -a loc
+	    loc=(${(@M)$(locale -a 2>/dev/null):#*.(utf|UTF)(-|)8}) || return
+	    (( $#loc )) || return
+	    typeset -g __p9k_locale=${loc[(r)(#i)C.UTF(-|)8]:-${loc[(r)(#i)en_US.UTF(-|)8]:-$loc[1]}}
+	  fi
+	  [[ -n $__p9k_locale ]]
+	}
+	
+	() {
+	  eval "$__p9k_intro"
+	  if (( $+__p9k_sourced )); then
+	    (( $+functions[_p9k_setup] )) && _p9k_setup
+	    return 0
+	  fi
+	  typeset -gr __p9k_dump_file=${XDG_CACHE_HOME:-~/.cache}/p10k-dump-${(%):-%n}.zsh
+	  if [[ $__p9k_dump_file != $__p9k_instant_prompt_dump_file ]] && (( ! $+functions[_p9k_preinit] )) && source $__p9k_dump_file 2>/dev/null && (( $+functions[_p9k_preinit] )); then
+	    _p9k_preinit
+	  fi
+	  typeset -gr __p9k_sourced=12
+	  if [[ $ZSH_VERSION == (5.<1->*|<6->.*) ]]; then
+	    if [[ -w $__p9k_root_dir && -w $__p9k_root_dir/internal && -w $__p9k_root_dir/gitstatus ]]; then
+	      local f
+	      for f in $__p9k_root_dir/{powerlevel9k.zsh-theme,powerlevel10k.zsh-theme,internal/p10k.zsh,internal/icons.zsh,internal/configure.zsh,internal/worker.zsh,internal/parser.zsh,gitstatus/gitstatus.plugin.zsh,gitstatus/install}; do
+	        [[ $f.zwc -nt $f ]] && continue
+	        zmodload -F zsh/files b:zf_mv b:zf_rm
+	        local tmp=$f.tmp.$$.zwc
+	        {
+	          # `zf_mv -f src dst` fails on NTFS if `dst` is not writable, hence `zf_rm`.
+	          zf_rm -f -- $f.zwc && zcompile -R -- $tmp $f && zf_mv -f -- $tmp $f.zwc
+	        } always {
+	          (( $? )) && zf_rm -f -- $tmp
+	        }
+	      done
+	    fi
+	  fi
+	  builtin source $__p9k_root_dir/internal/p10k.zsh || true
+	}
+	
+	(( $+__p9k_instant_prompt_active )) && unsetopt prompt_cr prompt_sp || setopt prompt_cr prompt_sp
+	
+	(( ${#__p9k_src_opts} )) && setopt ${__p9k_src_opts[@]}
+	'builtin' 'unset' '__p9k_src_opts'
+00155d07c60f27835d108f8d530471be|file:///home/jm/.config/aliases|2|11|v|
+	colorls -x --sd -t
+25e74108d42aefa311604eea892f33e0|file:///home/jm/Apps/dotfiles-ifg/aliasrc|10|1|V|conf
+	alias   ls="ls --group-directories-first --color=auto"
+b23efc96275a707426bfb0a9083bbded|file:///home/jm/.config/aliases|2|1|V|
+	alias ls="ls -"

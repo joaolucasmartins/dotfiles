@@ -662,11 +662,12 @@ key_bindings:
   - { key: Slash,  mods: Shift,         mode: Vi, action: SearchBackward          }
   - { key: N,                           mode: Vi, action: SearchNext              }
   - { key: N,      mods: Shift,         mode: Vi, action: SearchPrevious          }
-  - { key: H,     mods: Control, chars: "\x1bOH",   mode: AppCursor   } # Home
-  - { key: L,     mods: Control, chars: "\x1bOF",   mode: AppCursor   } # End
-  - { key: J,     mods: Control, chars: "\x1bb",   mode: AppCursor   } # Word Back
-  - { key: K,     mods: Control, chars: "\x1bf",   mode: AppCursor   } # Word After
+    #  - { key: H,     mods: Control, chars: "\x1bOH",   mode: AppCursor   } # Home
+    #  - { key: L,     mods: Control, chars: "\x1bOF",   mode: AppCursor   } # End
+    #  - { key: J,     mods: Control, chars: "\x1bb",   mode: AppCursor   } # Word Back
+    #  - { key: K,     mods: Control, chars: "\x1bf",   mode: AppCursor   } # Word After
   - { key: Back, mods: Control, chars: "\x15" } # delete word/line
+  - { key: Tab, mods: Control,       chars: DecreaseFontSize }
 
   # (Windows, Linux, and BSD only)
   #- { key: V,        mods: Control|Shift,           action: Paste            }
