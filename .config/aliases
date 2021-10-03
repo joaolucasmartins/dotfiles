@@ -1,0 +1,36 @@
+alias bime=nvim
+alias   ls="ls --group-directories-first --color=auto"
+alias l="colorls -Al --sd -t"
+
+alias LTWa="cd ~/Documents/Onedrive/FEUP/3ºAno/3oAno1oSemestre/LTW/Assets"
+alias LTWc="cd ~/Documents/Onedrive/FEUP/3ºAno/3oAno1oSemestre/LTW/Classes"
+alias LTWw="cd ~/Documents/Onedrive/FEUP/3ºAno/3oAno1oSemestre/LTW/Work"
+alias LAIGa="cd ~/Documents/Onedrive/FEUP/3ºAno/3oAno1oSemestre/LAIG/Assets"
+alias LAIGc="cd ~/Documents/Onedrive/FEUP/3ºAno/3oAno1oSemestre/LAIG/Classes"
+alias LAIGw="cd ~/Documents/Onedrive/FEUP/3ºAno/3oAno1oSemestre/LAIG/Work"
+alias PLOGa="cd ~/Documents/Onedrive/FEUP/3ºAno/3oAno1oSemestre/PLOG/Assets"
+alias PLOGc="cd ~/Documents/Onedrive/FEUP/3ºAno/3oAno1oSemestre/PLOG/Classes"
+alias PLOGw="cd ~/Documents/Onedrive/FEUP/3ºAno/3oAno1oSemestre/PLOG/Work"
+alias RCOMa="cd ~/Documents/Onedrive/FEUP/3ºAno/3oAno1oSemestre/RCOM/Assets"
+alias RCOMc="cd ~/Documents/Onedrive/FEUP/3ºAno/3oAno1oSemestre/RCOM/Classes"
+alias RCOMw="cd ~/Documents/Onedrive/FEUP/3ºAno/3oAno1oSemestre/RCOM/Work"
+alias ESOFa="cd ~/Documents/Onedrive/FEUP/3ºAno/3oAno1oSemestre/ESOF/Assets"
+alias ESOFc="cd ~/Documents/Onedrive/FEUP/3ºAno/3oAno1oSemestre/ESOF/Classes"
+alias ESOFw="cd ~/Documents/Onedrive/FEUP/3ºAno/3oAno1oSemestre/ESOF/Work"
+
+# Typo
+alias   cd..="cd .."
+alias   ...="cd ../.."
+alias   cd...="cd ../.."
+
+# Safety
+alias   cp="cp -i"
+alias   ln="ln -i"
+alias   mv="mv -i"
+alias   rm="rm -I"
+alias   chown="chown --preserve-root"
+alias   chmod="chmod --preserve-root"
+alias   chgrp="chgrp --preserve-root"
+
+alias   clndep='sudo pacman -R $(pacman -Qdtq)'
+alias   clnrep="printf 'Cleaning uninstalled packages\n'; sudo paccache -ruk0; printf 'Leaving last version of installed packages\n'; sudo paccache -rk1"

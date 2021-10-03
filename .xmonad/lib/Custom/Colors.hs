@@ -1,0 +1,1 @@
+/home/jm/.cache/wal/colors.hs

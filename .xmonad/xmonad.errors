@@ -1,0 +1,7 @@
+
+xmonad.hs:327:1: warning: [-Wtabs]
+    Tab character found here.
+    Please use spaces instead.
+    |
+327 |            myTabConfig = def { fontName            = myFont
+    | ^^^^^^^^
