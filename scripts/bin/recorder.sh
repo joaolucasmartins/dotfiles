@@ -1,6 +1,7 @@
 #!/bin/bash
 
 # Ensure PID file is removed on program exit.
+RES=$(xdpyinfo | awk '/dimensions/{print $2}')
 mypidfile=/tmp/recording.sh.pid
 trap "rm -f $mypidfile; polybar-msg hook record 1; jobs -p | xargs kill; exit 0" EXIT
 run_pid=$$
@@ -48,7 +49,7 @@ if [ $ret -eq 0 ]; then
     echo Recording with pid "$$"
 
     if [ $format == "video" ]; then
-        ffmpeg -y -nostdin -f x11grab -video_size 1920x1080 -framerate 25 -i $DISPLAY -f pulse -i default -c:v libx264 -preset ultrafast -c:a aac $output
+        ffmpeg -y -nostdin -f x11grab -video_size $RES -framerate 25 -i $DISPLAY -f pulse -i default -c:v libx264 -preset ultrafast -c:a aac $output
         echo "?????"
     elif [ $format == "audio" ]; then
         ffmpeg -y -nostdin -f pulse -i default $output
