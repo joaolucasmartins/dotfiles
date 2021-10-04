@@ -49,7 +49,10 @@ clean_scripts:
 	rm -r scripts
 update_scripts:
 	mkdir scripts
-	cp -r $(dir)/$(scripts) ./scripts/
+	cp -r $(dir)/$(scripts)/* ./scripts/
+install_scripts:
+	mkdir -p $(dir)/$(scripts)
+	cp -r ./scripts/* $(dir)/$(scripts)/
 
 clean_xmonad:
 	rm -r $(xmonad)
@@ -87,3 +90,6 @@ clean_polybar:
 	rm -r $(poly)
 update_polybar:
 	cp -r $(dir)/$(poly) ./$(poly)
+install_polybar:
+	mkdir -p $(dir)/$(poly)
+	cp -r ./$(poly)/* $(dir)/$(poly)/
