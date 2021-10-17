@@ -35,6 +35,10 @@ haskell-dbus xmonad-log
 
 # Instalation
 
+## Font
+
+[Hacker Nerd Font](https://aur.archlinux.org/packages/nerd-fonts-hack/)
+
 ## Wal templates
 
 Paste them to template folder, located in your pywal install.

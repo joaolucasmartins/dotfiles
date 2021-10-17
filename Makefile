@@ -34,6 +34,8 @@ clean_picom:
 	rm -r $(picom)
 update_picom:
 	cp $(dir)/$(picom) ./$(picom)
+install_picom:
+	cp ./$(picom) $(dir)/$(picom)
 
 clean_fish:
 	rm -r $(fish)
@@ -44,6 +46,8 @@ clean_alac:
 	rm -r $(alacritty)
 update_alac:
 	cp -r $(dir)/$(alacritty) ./$(alacritty)
+install_alac:
+	cp -r ./$(alacritty)/* $(dir)/$(alacritty)
 
 clean_scripts:
 	rm -r scripts
@@ -60,6 +64,9 @@ clean_xmonad:
 update_xmonad:
 	cp -r $(dir)/$(xmonad) ./$(xmonad)
 	cp $(dir)/$(xinit) ./$(xinit)
+install_xmonad:
+	cp -r ./$(xmonad)/* $(dir)/$(xmonad)
+	cp ./$(xinit) $(dir)/$(xinit)
 
 clean_dmenu:
 	rm -r dmenu
@@ -69,13 +76,19 @@ update_dmenu:
 	cp -r $(dir)/$(dmenu)/*.h ./dmenu
 	cp -r $(dir)/$(dmenu)/*.c ./dmenu
 	cp -r $(dir)/$(dmenu)/*.mk ./dmenu
+install_dmenu:
+	cp -r ./dmenu/* $(dir)/$(dmenu)/
+
 
 clean_wal:
 	rm -r $(wal)
 update_wal:
 	mkdir $(wal)
 	cp /lib/python3.9/site-packages/pywal/templates/colors.hs $(wal)
-	cp /lib/python3.9/site-packages/pywal/templates/colors-wal-dmenu.h.hs $(wal)
+	cp /lib/python3.9/site-packages/pywal/templates/colors-wal-dmenu.h $(wal)
+install_wal:
+	cp $(wal) /lib/python3.9/site-packages/pywal/templates/colors.hs
+	cp $(wal) /lib/python3.9/site-packages/pywal/templates/colors-wal-dmenu.h
 
 clean_vim:
 	rm -rf $(vim)
@@ -85,6 +98,10 @@ update_vim:
 	mkdir -p ./$(coc)
 	cp -r $(dir)/$(vim)/*.vim ./$(vim)/
 	cp -r $(dir)/$(coc)/*.json ./$(coc)
+install_vim:
+	cp -r ./$(vim)/* $(dir)/$(vim)/
+	cp -r ./$(coc)/* $(dir)/$(coc)/
+
 
 clean_polybar:
 	rm -r $(poly)
