@@ -72,6 +72,7 @@ import XMonad.Prompt                        -- to get my old key bindings workin
 import XMonad.Util.NamedScratchpad
 import XMonad.Actions.DynamicProjects
 import XMonad.Actions.SpawnOn
+import XMonad.Actions.DynamicWorkspaces (removeWorkspaceByTag)
 
 --Cycle
 import XMonad.Actions.CycleWS
@@ -83,7 +84,7 @@ import qualified Data.Map        as M
 -- The preferred terminal program, which is used in a binding below and by
 -- certain contrib modules.
 --
-myTerminal      = "alacritty -e fish"
+myTerminal      = "alacritty"
 myFont          = "xft:Mononoki Nerd Font:regular:pixelsize=11"
 
 -- Whether focus follows the mouse pointer.
@@ -120,6 +121,13 @@ myModMask       = mod4Mask
 
 myWorkspaces = map show [1..9]
 
+obsidian =
+    Project   { projectName       = "Obsidian"
+    , projectDirectory  = "~/Documents/ObsidianNotes"
+    , projectStartHook  = Just $ do spawnOn "Obsidian" $ myTerminal ++ " -e syncthing"
+                                    spawnOn "Obsidian" "obsidian"
+    }
+
 projects :: [Project]
 projects =
     [ Project   { projectName       = "test"
@@ -128,7 +136,7 @@ projects =
                                                 spawnOn "test" myTerminal
                                                 spawnOn "test" myTerminal
                 }
-
+    , obsidian
     ]
 
 -- xmonad example config file.
@@ -389,12 +397,16 @@ myEventHook = mempty
 --
 myLogHook dbus = def
     { ppOutput = dbusOutput dbus
-    , ppCurrent = wrap ("%{F" ++ color7 ++ "} ") " %{F-}"
-    , ppVisible = wrap ("%{F" ++ color7 ++ "} ") " %{F-}"
-    , ppUrgent = wrap ("%{F" ++ red ++ "} ") " %{F-}"
-    , ppHidden = wrap ("%{F" ++ color8 ++ "} ") " %{F-}"
-    , ppHiddenNoWindows = wrap ("%{F" ++ color1 ++ "} ") " %{F-}"
-    , ppTitle = wrap ("%{F" ++ color6 ++ "} ") " %{F-}" . shorten 73
+    , ppCurrent = wrap ("%{T4} %{F" ++ color7 ++ "} ") " %{F-}"
+    , ppVisible = wrap ("%{T4} %{F" ++ color7 ++ "} ") " %{F-}"
+    , ppUrgent = wrap ("${T4} %{F" ++ red ++ "} ") " %{F-}"
+    , ppHidden = wrap ("%{T4} %{F" ++ color8 ++ "} ") " %{F-}"
+    , ppHiddenNoWindows = wrap ("%{T4} %{F" ++ color1 ++ "} ") " %{F-}"
+    , ppTitle = wrap ("%{T1} %{F" ++ color6 ++ "} ") " %{F-}" . shorten 80
+    , ppWsSep = ""
+    , ppSep = " | "
+    -- , ppOrder  = \(ws:l:t:ex) -> [ws,l]++ex++[t] -- Default
+    , ppOrder  = \(ws:_:t:ex) -> [ws]++ex++[t] -- Removes layout
     }
 
 dbusOutput :: D.Client -> String -> IO ()
@@ -467,7 +479,7 @@ myKeys =
         , ("M-S-q", io exitSuccess)                  -- Quits xmonad
 
     -- Open my preferred terminal
-        , ("M-S-<Return>", spawn myTerminal)
+        , ("M-S-<Return>", spawn $ myTerminal ++ " -e fish")
 
     -- Floating windows
         , ("M-t", withFocused $ windows . W.sink) -- Push floating window back to tile
@@ -539,7 +551,8 @@ myKeys =
         , ("<XF86MonBrightnessDown>", spawn "xbacklight -dec 5")
         , ("<Print>", spawn "escrotum -C")
         , ("M-<Print>", spawn "escrotum -Cs")
-
+        , ("M-0", switchProject obsidian)
+        , ("M-C-0", removeWorkspaceByTag "Obsidian")
         ]
 
         -- The following lines are needed for named scratchpads.nsp

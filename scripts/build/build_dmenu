@@ -1,0 +1,2 @@
+#!/bin/bash
+sudo make -Cs /home/jm/Apps/dmenu clean install

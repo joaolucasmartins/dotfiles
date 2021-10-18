@@ -13,6 +13,7 @@ Plug 'honza/vim-snippets'                               " actual snippets
 Plug 'preservim/nerdcommenter'
 Plug 'dense-analysis/ale'
 Plug 'vim-scripts/quickrun.vim'
+"Plug 'puremourning/vimspector'
 "Plug 'Pablo1107/codi.vim'
 Plug 'justinmk/vim-sneak'
 Plug 'liuchengxu/vim-which-key'
@@ -41,6 +42,7 @@ source $HOME/.config/nvim/git.vim
 source $HOME/.config/nvim/fzf.vim
 source $HOME/.config/nvim/whichkey.vim
 source $HOME/.config/nvim/mappings.vim
+"source $HOME/.config/nvim/vimspector.vim
 
 " Themeing
 " let g:material_style = 'oceanic'

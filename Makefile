@@ -16,7 +16,7 @@ wal=wal_templates
 
 clean: clean_bash clean_scripts clean_xmonad clean_vim clean_polybar clean_dmenu clean_alac clean_fish clean_picom clean_cfg 
 
-update: update_cfg update_bash update_scripts update_xmonad update_vim update_polybar update_dmenu update_alac update_fish update_picom
+update: update_cfg update_bash update_scripts update_xmonad update_vim update_polybar update_dmenu update_alac update_fish update_picom update_perms
 
 clean_cfg:
 	rm -r .config
@@ -40,12 +40,12 @@ install_picom:
 clean_fish:
 	rm -r $(fish)
 update_fish:
-	cp -r $(dir)/$(fish) ./$(fish)
+	cp -r $(dir)/$(fish)/* ./$(fish)
 
 clean_alac:
 	rm -r $(alacritty)
 update_alac:
-	cp -r $(dir)/$(alacritty) ./$(alacritty)
+	cp -r $(dir)/$(alacritty)/* ./$(alacritty)
 install_alac:
 	cp -r ./$(alacritty)/* $(dir)/$(alacritty)
 
@@ -62,7 +62,7 @@ clean_xmonad:
 	rm -r $(xmonad)
 	rm -r $(xinit)
 update_xmonad:
-	cp -r $(dir)/$(xmonad) ./$(xmonad)
+	cp -r $(dir)/$(xmonad)/* ./$(xmonad)/
 	cp $(dir)/$(xinit) ./$(xinit)
 install_xmonad:
 	cp -r ./$(xmonad)/* $(dir)/$(xmonad)
@@ -106,7 +106,11 @@ install_vim:
 clean_polybar:
 	rm -r $(poly)
 update_polybar:
-	cp -r $(dir)/$(poly) ./$(poly)
+	cp -r $(dir)/$(poly)/* ./$(poly)
 install_polybar:
 	mkdir -p $(dir)/$(poly)
 	cp -r ./$(poly)/* $(dir)/$(poly)/
+
+update_perms:
+	chmod -R 755 *
+	chown -R jm:jm *
