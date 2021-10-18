@@ -119,7 +119,7 @@ myModMask       = mod4Mask
 -- windowCount :: X (Maybe String)
 -- windowCount = gets $ Just . show . length . W.integrate' . W.stack . W.workspace . W.current . windowset
 
-myWorkspaces = map show [1..9]
+myWorkspaces = map show [1..9] ++ ["Obsidian"]
 
 obsidian =
     Project   { projectName       = "Obsidian"
@@ -527,22 +527,6 @@ myKeys =
     -- Search
         , ("M-s" , spawn "~/.local/bin/dmenu_websearch")
 
-    --- My Applications (Super+Alt+Key)
-    --    , ("M-M1-a", spawn (myTerminal ++ " -e ncpamixer"))
-    --    , ("M-M1-b", spawn "surf www.youtube.com/c/DistroTube/")
-    --    , ("M-M1-e", spawn (myTerminal ++ " -e neomutt"))
-    --    , ("M-M1-f", spawn (myTerminal ++ " -e sh ./.config/vifm/scripts/vifmrun"))
-    --    , ("M-M1-i", spawn (myTerminal ++ " -e irssi"))
-    --    , ("M-M1-j", spawn (myTerminal ++ " -e joplin"))
-    --    , ("M-M1-l", spawn (myTerminal ++ " -e lynx https://distrotube.com"))
-    --    , ("M-M1-m", spawn (myTerminal ++ " -e mocp"))
-    --    , ("M-M1-n", spawn (myTerminal ++ " -e newsboat"))
-    --    , ("M-M1-p", spawn (myTerminal ++ " -e pianobar"))
-    --    , ("M-M1-r", spawn (myTerminal ++ " -e rtv"))
-    --    , ("M-M1-t", spawn (myTerminal ++ " -e toot curses"))
-    --    , ("M-M1-w", spawn (myTerminal ++ " -e wopr report.xml"))
-    --    , ("M-M1-y", spawn (myTerminal ++ " -e youtube-viewer"))
-
     -- Multimedia Keys
         , ("<XF86AudioMute>",   spawn "pamixer -t")  -- Bug prevents it from toggling correctly in 12.04.
         , ("<XF86AudioLowerVolume>", spawn "pamixer -d 5")
@@ -550,9 +534,8 @@ myKeys =
         , ("<XF86MonBrightnessUp>", spawn "xbacklight -inc 5")
         , ("<XF86MonBrightnessDown>", spawn "xbacklight -dec 5")
         , ("<Print>", spawn "escrotum -C")
-        , ("M-<Print>", spawn "escrotum -Cs")
-        , ("M-0", switchProject obsidian)
-        , ("M-C-0", removeWorkspaceByTag "Obsidian")
+        , ("M-<Print>", spawn "escrotum -Cs -d 1")
+        , ("M-0", windows $ W.greedyView "Obsidian")
         ]
 
         -- The following lines are needed for named scratchpads.nsp

@@ -1,1 +1,1 @@
-fromList [("Confirm exit (esc/ENTER)",["","","",""]),("Send Window to Project: ",[""]),("Switch or Create Project: ",["Obsi","test","test","tes","tes","tes","t","t","t","","test","test","test","test","tes","tes","tes","test","test"])]
+fromList [("Confirm exit (esc/ENTER)",["","","",""]),("Send Window to Project: ",[""]),("Switch or Create Project: ",["test","Obs","Obsi","test","test","tes","tes","tes","t","t","t","","test","test","test","test","tes","tes","tes","test","test"])]
