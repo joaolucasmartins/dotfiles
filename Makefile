@@ -41,6 +41,9 @@ clean_fish:
 update_fish:
 	cp -r $(dir)/$(fish)/* ./$(fish)
 	cp $(dir)/$(aliases) ./$(aliases)
+install_fish:
+	cp -r ./$(fish)/* $(dir)/$(fish) 
+	cp ./$(aliases) $(dir)/$(aliases) 
 
 clean_alac:
 	rm -r $(alacritty)

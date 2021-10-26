@@ -535,7 +535,7 @@ myKeys =
         , ("<XF86MonBrightnessDown>", spawn "xbacklight -dec 5")
         , ("<Print>", spawn "escrotum -C")
         , ("M-<Print>", spawn "escrotum -Cs -d 1")
-        , ("M-0", windows $ W.greedyView "Obsidian")
+        , ("M-\\", windows $ W.greedyView "Obsidian")
         ]
 
         -- The following lines are needed for named scratchpads.nsp
