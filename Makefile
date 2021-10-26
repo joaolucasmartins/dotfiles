@@ -1,6 +1,6 @@
 dir=/home/jm# to copy from different users
 # Directories
-aliases=.config/aliases
+aliases=.config/aliases.fish
 bashrc=.bashrc
 xmonad=.xmonad
 xinit=.xinitrc
@@ -25,10 +25,8 @@ update_cfg:
 
 clean_bash:
 	rm -r $(bashrc)
-	rm -r .config/$(aliases)
 update_bash:
 	cp $(dir)/$(bashrc) .
-	cp $(dir)/$(aliases) ./$(aliases)
 
 clean_picom:
 	rm -r $(picom)
@@ -39,8 +37,10 @@ install_picom:
 
 clean_fish:
 	rm -r $(fish)
+	rm -r .config/$(aliases)
 update_fish:
 	cp -r $(dir)/$(fish)/* ./$(fish)
+	cp $(dir)/$(aliases) ./$(aliases)
 
 clean_alac:
 	rm -r $(alacritty)

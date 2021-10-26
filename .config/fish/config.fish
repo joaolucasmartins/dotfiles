@@ -1,4 +1,5 @@
 fish_add_path $HOME/.local/bin
+source $HOME/.config/aliases.fish
 
 
 if status is-interactive
