@@ -31,6 +31,8 @@ import qualified Codec.Binary.UTF8.String as UTF8
 import XMonad.Layout.NoFrillsDecoration
 import XMonad.Layout.DwmStyle
 import XMonad.Layout.Decoration
+import XMonad.Layout.Grid
+import XMonad.Layout.Spiral
 
 -- Promote
 import XMonad.Actions.Promote
@@ -310,10 +312,9 @@ mySpacing i = spacingRaw False (Border i i i i) True (Border i i i i) True
 mySpacing' :: Integer -> l a -> XMonad.Layout.LayoutModifier.ModifiedLayout Spacing l a
 mySpacing' i = spacingRaw True (Border i i i i) True (Border i i i i) True
 
-spaaaaace = 15
+spaaaaace = 8
 
 tall     = renamed [Replace "tall"] 
-           $ mySpacing spaaaaace
            $ ResizableTall 1 (3/100) (1/2) []
 
 floats   = renamed [Replace "floats"]
@@ -321,11 +322,6 @@ floats   = renamed [Replace "floats"]
 
 monocle  = renamed [Replace "monocle"]
            Full
-
-magnify  = renamed [Replace "magnify"]
-           $ magnifier
-           $ mySpacing spaaaaace
-           $ ResizableTall 1 (3/100) (1/2) []
 
 tabs     = renamed [Replace "tabs"]
            -- I cannot add spacing to this layout because it will
@@ -342,16 +338,14 @@ tabs     = renamed [Replace "tabs"]
                              }
 
 
-myLayout = avoidStruts $ mouseResize $ windowArrange $ T.toggleLayouts floats $
+myLayout = avoidStruts $ mySpacing spaaaaace $ mouseResize $ windowArrange $ T.toggleLayouts floats $
     mkToggle (NBFULL ?? NOBORDERS ?? EOT) myDefaultLayout
         where
             myDefaultLayout = tall
-                ||| magnify
                 ||| noBorders monocle
-                ||| floats
-                -- ||| grid
+                ||| Grid
+                ||| spiral (6/7)
                 ||| noBorders tabs
-                -- -- ||| spirals
                 -- -- ||| threeCol
                 -- -- ||| threeRow
 

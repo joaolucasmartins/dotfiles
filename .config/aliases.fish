@@ -28,6 +28,7 @@ set 4A_1S "$4oAno/4oAno1oSemestre"
 alias PRI="cd $4A_1S/PRI"
 alias SDLE="cd $4A_1S/SDLE"
 alias FSI="cd $4A_1S/FSI"
+alias AC="cd $4A_1S/AC"
 
 # Typo
 alias   cd..="cd .."
