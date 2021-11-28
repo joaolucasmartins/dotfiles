@@ -16,10 +16,12 @@ let g:coc_global_extensions = [
             \'coc-html',
             \'coc-json',
             \'coc-marketplace',
+            \'coc-diagnostic',
             \'coc-pairs',
             \'coc-phpls',
             \'coc-pyright',
             \'coc-snippets',
+            \'coc-prettier',
             \'coc-tsserver',
             \'coc-xml',
             \'coc-yank',
@@ -79,3 +81,10 @@ nmap <silent> gy <Plug>(coc-type-definition)
 nmap <silent> gi <Plug>(coc-implementation)
 nmap <silent> gr <Plug>(coc-references)
 nmap <silent> <a-cr> <Plug>(coc-codeaction)
+
+" formating
+" Format for auto file formatting
+command! -nargs=0 Format :call CocAction('format')
+" use `:OR` for organize import of current buffer
+command! -nargs=0 OR   :call     CocAction('runCommand', 'editor.action.organizeImport')
+nnoremap <silent> <F1> :Format<CR>

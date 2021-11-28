@@ -422,8 +422,8 @@ dbusOutput dbus str = do
 -- per-workspace layout choices.
 --
 -- By default, do nothing.
-myStartupHook = return ()
-    -- spawn "killall polybar ; polybar config"
+myStartupHook =
+    spawn "MONITOR='HDMI-0' polybar --reload config &; MONITOR='DVI-I-1' polybar --reload config &"
 
 ------------------------------------------------------------------------
 -- Now run xmonad with all the defaults we set up.
@@ -506,17 +506,17 @@ myKeys =
         , ("M--", decWindowSpacing 5)               -- Exoand vert window width
 
     -- Workspaces
-        , ("M-.", nextScreen)  -- Switch focus to next monitor
-        , ("M-,", prevScreen)  -- Switch focus to prev monitor
+        , ("M-e.", nextScreen)  -- Switch focus to next monitor
+        , ("M-w,", prevScreen)  -- Switch focus to prev monitor
 
     -- Scratchpads
         , ("M-C-<Return>", namedScratchpadAction myScratchPads "terminal")
 
     -- Projects
-        , ("M-w", switchProjectPrompt warmPromptTheme)
-        , ("M-S-w", shiftToProjectPrompt warmPromptTheme)
-        , ("M-S-C-j", nextWS)
-        , ("M-S-C-k", prevWS)
+        --, ("M-w", switchProjectPrompt warmPromptTheme)
+        --, ("M-S-w", shiftToProjectPrompt warmPromptTheme)
+        --, ("M-S-C-j", nextWS)
+        --, ("M-S-C-k", prevWS)
 
     -- Search
         , ("M-s" , spawn "~/.local/bin/dmenu_websearch")

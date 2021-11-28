@@ -1,5 +1,7 @@
 fish_add_path $HOME/.local/bin
 source $HOME/.config/aliases.fish
+export _JAVA_AWT_WM_NONREPARENTING=1
+export LD_LIBRARY_PATH=/usr/local/lib
 
 
 if status is-interactive

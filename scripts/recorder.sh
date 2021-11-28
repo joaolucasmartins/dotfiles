@@ -48,7 +48,7 @@ if [ $ret -eq 0 ]; then
     echo Recording with pid "$$"
 
     if [ $format == "video" ]; then
-        ffmpeg -y -nostdin -f x11grab -video_size 1920x1080 -framerate 25 -i $DISPLAY -f pulse -i default -c:v libx264 -preset ultrafast -c:a aac $output
+        ffmpeg -y -nostdin -f x11grab -video_size 1920x1080 -framerate 25 -i $DISPLAY -f pulse -i 0 -c:v libx264 -preset ultrafast -c:a aac $output
         echo "?????"
     elif [ $format == "audio" ]; then
         ffmpeg -y -nostdin -f pulse -i default $output

@@ -43,7 +43,7 @@ set background=dark                     " tell vim what the background color loo
 set showtabline=2                       " Always show tabs
 
 " tabs
-set tabstop=4 softtabstop=4 shiftwidth=4" tab width
+set tabstop=2 softtabstop=2 shiftwidth=2" tab width
 set smarttab                            " Makes tabbing smarter will realize you have 2 vs 4
 set expandtab                           " Converts tabs to spaces
 set smartindent                         " Makes indenting smart
