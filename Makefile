@@ -13,12 +13,13 @@ fish=.config/fish
 alacritty=.config/alacritty
 picom=.config/picom.conf
 wal=.config/wal/templates
+firefox=.mozilla/firefox/po8b051c.default-release/chrome/
 
-clean: clean_bash clean_scripts clean_xmonad clean_vim clean_polybar clean_dmenu clean_alac clean_fish clean_picom clean_cfg 
+clean: clean_bash clean_scripts clean_xmonad clean_vim clean_polybar clean_dmenu clean_alac clean_fish clean_picom clean_cfg clean_firefox
 
 update: update_cfg update_bash update_scripts update_xmonad update_vim update_polybar update_dmenu update_alac update_fish update_picom update_perms
 
-install: install_cfg install_wal install_scripts install_dmenu install_xmonad
+install: install_cfg install_wal install_scripts install_dmenu install_xmonad install_firefox
 
 clean_cfg:
 	rm -r .config
@@ -96,7 +97,7 @@ update_xmonad:
 install_xmonad:
 	mkdir -p $(dir)/$(xmonad)
 	cp -r ./$(xmonad)/* $(dir)/$(xmonad)
-	cp ./$(xinit) $(dir)/$(xinit)
+	cp ./$(xinit) $(dir)/$(xinit).mozilla/firefox/po8b051c.default-release/chrome/
 
 clean_dmenu:
 	rm -r dmenu
@@ -116,3 +117,15 @@ update_wal:
 	cp $(dir)/$(wal)/* ./$(wal)/
 install_wal:
 	cp ./$(wal)/* $(dir)/$(wal)/
+
+clean_firefox:
+	rm -r ./$(firefox)
+update_firefox:
+	mkdir -p ./$(firefox)
+	cp -r $(dir)/$(firefox)/* ./$(firefox)
+install_firefox:
+	cp -r ./$(firefox)/* $(dir)/$(firefox)/
+
+update_perms:
+	chmod -R 755 *
+	chown -R jm:jm *
