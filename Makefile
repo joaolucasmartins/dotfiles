@@ -94,6 +94,7 @@ update_xmonad:
 	cp -r $(dir)/$(xmonad)/* ./$(xmonad)/
 	cp $(dir)/$(xinit) ./$(xinit)
 install_xmonad:
+	mkdir -p $(dir)/$(xmonad)
 	cp -r ./$(xmonad)/* $(dir)/$(xmonad)
 	cp ./$(xinit) $(dir)/$(xinit)
 
@@ -112,4 +113,6 @@ clean_wal:
 	rm -r $(wal)
 update_wal:
 	mkdir $(wal)
-	cp -r $(dir)/$(wal) ./$(wal)/
+	cp $(dir)/$(wal)/* ./$(wal)/
+install_wal:
+	cp ./$(wal)/* $(dir)/$(wal)/
