@@ -18,7 +18,7 @@ clean: clean_bash clean_scripts clean_xmonad clean_vim clean_polybar clean_dmenu
 
 update: update_cfg update_bash update_scripts update_xmonad update_vim update_polybar update_dmenu update_alac update_fish update_picom update_perms
 
-install: install_cfg install_wal install_dmenu install_xmonad
+install: install_cfg install_wal install_scripts install_dmenu install_xmonad
 
 clean_cfg:
 	rm -r .config
