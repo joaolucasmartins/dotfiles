@@ -28,7 +28,7 @@ Plug 'dylanaraps/wal.vim'
 Plug 'vim-airline/vim-airline'
 Plug 'hzchirs/vim-material'                             " material color themes
 Plug 'ryanoasis/vim-devicons'                           " pretty icons everywhere
-Plug 'Yggdroot/indentLine'
+"Plug 'Yggdroot/indentLine'
 Plug 'joshdick/onedark.vim'
 Plug 'rakr/vim-one'
 Plug 'octol/vim-cpp-enhanced-highlight'
@@ -82,13 +82,7 @@ highlight CocErrorSign ctermfg=Red  guifg=#ff0000       " This go red
 
 " smoothie
 let g:smoothie_no_default_mappings = 1
-
-" indentLine
-let g:indentLine_char_list = ['▏']
-let g:indentLine_setColors = 1
-let g:indentLine_setConceal = 1                         " actually fix the annoying markdown links conversio
-let g:indentLine_fileTypeExclude = ['startify']
-
 let b:quickrun_config = {'outputter/buffer/split': "", 'outputter/buffer/into' : 1}
+
 
 

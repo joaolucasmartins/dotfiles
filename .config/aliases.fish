@@ -3,7 +3,7 @@ alias bime=nvim
 alias ls="ls --group-directories-first --color=auto"
 alias l="colorls -Al --sd -t"
 
-set FEUP "~/Nextcloud/FEUP"
+set FEUP "~/Nextcloud/Work/FEUP"
 set 3oAno "$FEUP/3ºAno"
 set 3A_1S "$3oAno/3oAno1oSemestre"
 
@@ -31,6 +31,8 @@ alias FSI="cd $4A_1S/FSI"
 alias AC="cd $4A_1S/AC"
 alias DS="cd $4A_1S/DS"
 
+alias SLAM="cd $FEUP/IEEE/SLAM"
+
 # Typo
 alias   cd..="cd .."
 alias   ...="cd ../.."
@@ -47,3 +49,6 @@ alias   chgrp="chgrp --preserve-root"
 
 alias   clndep='sudo pacman -R (pacman -Qdtq)'
 alias   clnrep="printf 'Cleaning uninstalled packages\n'; sudo paccache -ruk0; printf 'Leaving last version of installed packages\n'; sudo paccache -rk1"
+
+# For building skse
+set Skyrim64Path ~/.local/share/Steam/steamapps/common/Skyrim\ Special\ Edition/

@@ -389,6 +389,8 @@ myEventHook = mempty
 -- Perform an arbitrary action on each internal state change or X event.
 -- See the 'XMonad.Hooks.DynamicLog' extension for examples.
 --
+
+red = "#DD0000"
 myLogHook dbus = def
     { ppOutput = dbusOutput dbus
     , ppCurrent = wrap ("%{T4} %{F" ++ color7 ++ "} ") " %{F-}"
@@ -527,8 +529,9 @@ myKeys =
         , ("<XF86AudioRaiseVolume>", spawn "pamixer -i 5")
         , ("<XF86MonBrightnessUp>", spawn "xbacklight -inc 5")
         , ("<XF86MonBrightnessDown>", spawn "xbacklight -dec 5")
-        , ("<Print>", spawn "escrotum -C")
-        , ("M-<Print>", spawn "escrotum -Cs -d 1")
+
+        , ("<Print>", spawn "scrot Images/Screenshots/ -e 'xclip -selection clipboard -t image/png -i $f'")
+        , ("M-<Print>", spawn "scrot Images/Screenshots/ -s -e 'xclip -selection clipboard -t image/png -i $f'")
         , ("M-\\", windows $ W.greedyView "Obsidian")
         ]
 
