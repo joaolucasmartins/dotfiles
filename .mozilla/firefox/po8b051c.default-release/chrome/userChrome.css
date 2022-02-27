@@ -71,7 +71,7 @@
   --uc-border-radius: 0;
 
   /* dynamic url bar width settings */
-  --uc-urlbar-width: clamp(200px, 40vw, 500px);
+  --uc-urlbar-width: clamp(200px, 40vw, 550px);
 
   /* dynamic tab width settings */
   --uc-active-tab-width: clamp(100px, 20vw, 300px);
@@ -93,7 +93,9 @@
 
 #back-button,
 #forward-button {
-  display: none !important;
+  /*display: none !important;*/
+  transform: scale(0.7, 0.7) !important;
+  margin-left: -0.4em !important;
 }
 
 /* bookmark icon */
