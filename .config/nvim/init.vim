@@ -19,6 +19,7 @@ Plug 'liuchengxu/vim-which-key'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'ggandor/lightspeed.nvim'
+
 "Plug 'justinmk/vim-sneak'
 " Git
 Plug 'mhinz/vim-signify'
@@ -50,8 +51,15 @@ source $HOME/.config/nvim/mappings.vim
 " Themeing
 " let g:material_style = 'oceanic'
 colorscheme one
-"set background=dark
-set background=light
+set cursorline " Cool cursor highlighting
+set lazyredraw " Improves performance
+
+let hr = (strftime('%H'))
+if hr >= 18
+  set background=dark
+else
+  set background=light
+endif
 let g:cpp_member_variable_highlight = 1
 let g:cpp_class_scope_highlight = 1
 let g:cpp_class_decl_highlight = 1

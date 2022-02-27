@@ -7,6 +7,8 @@ xrandr --output HDMI-0 --left-of DVI-I-1
 polybar config &
 #MONITOR=HDMI-0 polybar config &
 
+setxkbmap -layout pt
+
 dunst &
 xset led 3 # Light keyboard
 picom --experimental-backends --config ~/.config/picom.conf &

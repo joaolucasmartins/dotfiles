@@ -145,6 +145,7 @@ SETUVAR _hydro_git_5092:pingneighbours\x20
 SETUVAR _hydro_git_50952:multi_thread\u2022\x20\u21911\x20
 SETUVAR _hydro_git_52016:master\x20
 SETUVAR _hydro_git_5209:\x1d
+SETUVAR _hydro_git_52318:master\u2022\x20
 SETUVAR _hydro_git_53439:\x1d
 SETUVAR _hydro_git_5358:master\x20
 SETUVAR _hydro_git_54909:master\x20
@@ -156,6 +157,7 @@ SETUVAR _hydro_git_5739:fix_queues\u2022\x20
 SETUVAR _hydro_git_5893:fix_queues\u2022\x20
 SETUVAR _hydro_git_59062:master\u2022\x20
 SETUVAR _hydro_git_59150:titanic\u2022\x20
+SETUVAR _hydro_git_59292:\x1d
 SETUVAR _hydro_git_6186:master\x20
 SETUVAR _hydro_git_6586:main\u2022\x20
 SETUVAR _hydro_git_6672:t2_configs\x20
