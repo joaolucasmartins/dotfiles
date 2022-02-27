@@ -13,7 +13,7 @@ fish=.config/fish
 alacritty=.config/alacritty
 picom=.config/picom.conf
 wal=.config/wal/templates
-firefox=.mozilla/firefox/po8b051c.default-release/chrome/
+firefox=.mozilla/firefox/2l9sqktj.default-release/chrome
 
 clean: clean_bash clean_scripts clean_xmonad clean_vim clean_polybar clean_dmenu clean_alac clean_fish clean_picom clean_cfg clean_firefox
 
@@ -119,12 +119,11 @@ install_wal:
 	cp ./$(wal)/* $(dir)/$(wal)/
 
 clean_firefox:
-	rm -r ./$(firefox)
+	rm -r ./userChrome.css
 update_firefox:
-	mkdir -p ./$(firefox)
-	cp -r $(dir)/$(firefox)/* ./$(firefox)
+	cp -r $(dir)/$(firefox)/* ./userChrome.css
 install_firefox:
-	cp -r ./$(firefox)/* $(dir)/$(firefox)/
+	cp -r ./userChrome.css $(dir)/$(firefox)
 
 update_perms:
 	chmod -R 755 *
