@@ -15,6 +15,11 @@ picom=.config/picom.conf
 wal=.config/wal/templates
 firefox=.mozilla/firefox/2l9sqktj.default-release/chrome
 
+usage:
+	@echo "clean: Remove dotfiles in ."
+	@echo "update: Update dotfiles in . from $(dir)"
+	@echo "install: Install dotfiles in . to $(dir)"
+
 clean: clean_bash clean_scripts clean_xmonad clean_vim clean_polybar clean_dmenu clean_alac clean_fish clean_picom clean_cfg clean_firefox
 
 update: update_cfg update_bash update_scripts update_xmonad update_vim update_polybar update_dmenu update_alac update_fish update_picom update_perms update_firefox update_wal

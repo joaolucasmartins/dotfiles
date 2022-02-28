@@ -183,6 +183,19 @@ window,
   --toolbar-color: var(--color7);
 }
 
+/*Searchbar */
+#urlbar-input, #urlbar-scheme, .searchbar-textbox {
+  color: #DDDDDD !important;
+}
+
+#urlbar:is([focused="true"], [open]), #searchbar:focus-within {
+  color: var(--color0) !important;
+}
+
+.urlbarView-url {
+  color: var(--color2) !important;
+}
+
 /* grey out ccons inside the toolbar to make it
  * more aligned with the Black & White colour look */
 #PersonalToolbar toolbarbutton:not(:hover),
@@ -234,12 +247,24 @@ window,
   background: var(--uc-hover-colour) !important;
 }
 
+/*Unselected bar color*/
+tab {
+  color: var(--color7) !important;
+}
+
+/*New tab button*/
+.toolbarbutton-animatable-box, .toolbarbutton-1 {
+  color: var(--color7) !important;
+}
+
 /* tab close button options */
 .tabbrowser-tab:not([pinned]) .tab-close-button {
   display: var(--show-tab-close-button) !important;
+  color: rgb(255, 0, 0) !important;
 }
 .tabbrowser-tab:not([pinned]):hover .tab-close-button {
   display: var(--show-tab-close-button-hover) !important;
+  color: rgb(255, 0, 0) !important;
 }
 
 /* adaptive tab width */
@@ -373,7 +398,7 @@ window,
 }
 
 #urlbar[open] > #urlbar-background {
-  background: var(--color1T) !important;
+  background: var(--color7T) !important;
 }
 
 .urlbarView-row:hover > .urlbarView-row-inner,
